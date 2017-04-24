@@ -2,7 +2,7 @@
   "name": "nodeapp",
   "private": true,
   "version": "0.0.1",
-  "description": "A aavidcode Application",
+  "description": "A Wohlig Application",
   "keywords": [],
   "dependencies": {
     "autoprefixer": "^6.7.7",
@@ -59,8 +59,8 @@
     "request": "^2.74.0",
     "sails": "~0.12.3",
     "sails-disk": "~0.10.9",
-    "sails-aavidcode-controller": "latest",
-    "sails-aavidcode-service": "latest",
+    "sails-wohlig-controller": "latest",
+    "sails-wohlig-service": "latest",
     "sendgrid": "^5.0.0"
   },
   "scripts": {
@@ -70,9 +70,9 @@
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/aavidcodetechnology/nodeframework.git"
+    "url": "git://github.com/wohligtechnology/nodeframework.git"
   },
-  "author": "aavidcode",
+  "author": "wohlig",
   "license": "",
   "devDependencies": {
     "grunt-browser-sync": "^2.2.0",

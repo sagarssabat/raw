@@ -3,10 +3,10 @@
   "description": "a Sails application",
   "main": "app.js",
   "authors": [
-    "aavidcode"
+    "wohlig"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/aavidcodeTechnology/nodeFramework",
+  "homepage": "https://github.com/WohligTechnology/nodeFramework",
   "private": true,
   "ignore": [
     "**/.*",

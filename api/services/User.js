@@ -84,7 +84,7 @@ schema.plugin(timestamps);
 
 module.exports = mongoose.model('User', schema);
 
-var exports = _.cloneDeep(require("sails-aavidcode-service")(schema, "user", "user"));
+var exports = _.cloneDeep(require("sails-wohlig-service")(schema, "user", "user"));
 var model = {
 
     existsSocial: function (user, callback) {

@@ -1,4 +1,4 @@
 module.exports.views = {
     name: "Node Framework",
-    twitterHandle: "@aavidcodetechnology"
+    twitterHandle: "@wohligtechnology"
 };

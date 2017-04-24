@@ -27,7 +27,7 @@ module.exports = {
 
   port: 80,
   realHost: "http://tushar.io",
-  emails: ["chintan@aavidcode.com", "jagruti@aavidcode.com", "tushar@aavidcode.com", "chirag@aavidcode.com", "harsh@aavidcode.com"]
+  emails: ["chintan@wohlig.com", "jagruti@wohlig.com", "tushar@wohlig.com", "chirag@wohlig.com", "harsh@wohlig.com"]
 
   /***************************************************************************
    * Set the log level in production environment to "silent"                 *

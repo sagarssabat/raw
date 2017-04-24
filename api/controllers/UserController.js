@@ -1,4 +1,4 @@
-module.exports = _.cloneDeep(require("sails-aavidcode-controller"));
+module.exports = _.cloneDeep(require("sails-wohlig-controller"));
 var controller = {
     loginFacebook: function (req, res) {
         passport.authenticate('facebook', {
