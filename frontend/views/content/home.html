@@ -87,15 +87,17 @@
         <div class="story">
             <div>
                 <h3>Our Story</h3>
-                <p>
-                    “Inspired by our travels to off-beat locations across the globe, we have sourced exotic ingredients of the highest quality
-                    to build a line of powerful grooming products for men.”
-                </p>
-                <p>
-                    We find inspiration in outdated lore and urban legends, antiquated herbal wisdom and cutting edge research, native ritual
-                    medicine and modern grooming innovations. Borne of distilled essences and distinct travel memories, each
-                    of our products truly reflects the character of the modern man and his pursuits of passion.
-                </p>
+                <div>
+                    <p>
+                        “Inspired by our travels to off-beat locations across the globe, we have sourced exotic ingredients of the highest quality
+                        to build a line of powerful grooming products for men.”
+                    </p>
+                    <p>
+                        We find inspiration in outdated lore and urban legends, antiquated herbal wisdom and cutting edge research, native ritual
+                        medicine and modern grooming innovations. Borne of distilled essences and distinct travel memories,
+                        each of our products truly reflects the character of the modern man and his pursuits of passion.
+                    </p>
+                </div>
             </div>
             <div class="text-center">
                 <ul class="list-inline list-unstyled">
@@ -131,11 +133,60 @@
                 <p>
                     All ingredients are either 100% Natural / Eco Certified & 100% safe to use.
                 </p>
-                <a href="">Know More</a>
+                <div>
+                    <a href="">Know More</a>
+                </div>
             </div>
         </div>
     </div>
 </section>
 <section>
-
+    <div class="container">
+        <!--<div class="row" ng-repeat="myProduct in myArray">
+            <div class="col-md-4" ng-repeat="product in myProduct">
+                <div>
+                    <h3>{{product.title}}</h3>
+                    <a href=" ">
+                        <img ng-src="{{product.img}}" alt=" " class="img-responsive ">
+                    </a>
+                    <div>
+                        <p>{{product.desc}}</p>
+                        <button class="btn btn-default">{{product.btntxt}}</button>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+        <div class="product-list">
+            <ul class="list-unstyled list list-inline" ng-repeat="myProduct in myArray">
+                <li ng-repeat="product in myProduct">
+                    <div>
+                        <h3>{{product.title}}</h3>
+                        <a href=" ">
+                            <img ng-src="{{product.img}}" alt=" " class="img-responsive ">
+                        </a>
+                        <div>
+                            <p>{{product.desc}}</p>
+                            <button class="btn btn-default">{{product.btntxt}}</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section>
+    <div>
+        <img src="" alt="" class="img-responsive">
+        <div>
+            <p>
+                Auto-Replenish &amp; Never Run out of your Favourite Products.
+            </p>
+            <p>No Advance Payment | No Minimum Purchase Obligation</p>
+        </div>
+        <div>
+            <ul class="list-unstyled list-inline">
+                <li></li>
+            </ul>
+        </div>
+    </div>
 </section>

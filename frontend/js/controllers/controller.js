@@ -18,6 +18,33 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
                 btntxt: 'Explore Raw Nature'
             }
         ];
+        $scope.productSlide = [{
+            title: 'Beard Care',
+            img: 'img/home/product-1.png',
+            desc: 'For Our Band of beared brothers.',
+            btntxt: 'Shop beared Solution'
+        }, {
+            title: 'Below The Belt',
+            img: 'img/home/product-2.png',
+            desc: 'Protect yourself from chafing,, down under.',
+            btntxt: 'Shop below the belt'
+        }, {
+            title: 'Shower Solutions',
+            img: 'img/home/product-3.png',
+            desc: 'Recover from prolonged exposure.',
+            btntxt: 'Shop shower Solution'
+        }, {
+            title: 'Hair Care',
+            img: 'img/home/product-4.png',
+            desc: "Energise your hair after a hard day's work.",
+            btntxt: 'Shop Hair care'
+        }, {
+            title: 'Skin Care',
+            img: 'img/home/product-5.png',
+            desc: 'Lathers Great, Washes Clean.',
+            btntxt: 'Shop Skin care'
+        }];
+        $scope.myArray = _.chunk($scope.productSlide, 3);
         var abc = _.times(100, function (n) {
             return n;
         });
