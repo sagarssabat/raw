@@ -5,18 +5,28 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
 
         $scope.mySlides = [
             'img/home/slide-1.jpg',
-            'img/home/slide-1.jpg'
+            'img/home/slide-2.jpg',
+            'img/home/slide-3.jpg'
         ];
         $scope.homeSlide = [{
                 title: 'Grooming Essentials Tailored For Men',
-                img: 'img/home/slide-1.jpg',
-                btntxt: 'Explore Raw Nature'
-            },
-            {
-                title: 'Grooming Essentials Tailored For Men',
+                title2: 'who want to build empires and leave legacies behind.',
                 img: 'img/home/slide-1.jpg',
                 btntxt: 'Explore Raw Nature'
             }
+            // ,
+            // {
+            //     title: 'Enrichedd With Modern Notes of rosemary, orange and cedarwood',
+            //     title2: 'Create looks both Messy and Constructed.',
+            //     img: 'img/home/slide-2.png',
+            //     btntxt: 'Explore Raw Nature'
+            // },
+            // {
+            //     title: 'Inspired by American bourbon casks,',
+            //     title2: 'rare isrish whiskes and erupting volcanoes.',
+            //     img: 'img/home/slide-3.jpg',
+            //     btntxt: 'Explore Raw Nature'
+            // }
         ];
         $scope.productSlide = [{
             title: 'Beard Care',
@@ -44,6 +54,27 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
             desc: 'Lathers Great, Washes Clean.',
             btntxt: 'Shop Skin care'
         }];
+        $scope.processSlide = [{
+                img: 'img/home/icon-1.png',
+                title: 'Shop',
+                desc: 'Choose the products that you want automatically shipped.'
+            },
+            {
+                img: 'img/home/icon-2.png',
+                title: 'Schedule',
+                desc: 'Choose your delivery frequency (15-60 days).No Minimum Purchase Obligation Pause, Delay &amp; Restart at will.'
+            },
+            {
+                img: 'img/home/icon-3.png',
+                title: 'Save',
+                desc: 'Get a lifetime discount of 15% on all your purchase under auto-replenishment.'
+            },
+            {
+                img: 'img/home/icon-4.png',
+                title: 'Ship',
+                desc: 'Sit back &amp; relax! Your favorite products will reach you automatically whn they are due.'
+            }
+        ];
         $scope.myArray = _.chunk($scope.productSlide, 3);
         var abc = _.times(100, function (n) {
             return n;

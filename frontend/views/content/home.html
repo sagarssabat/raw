@@ -32,12 +32,17 @@
 
 </div>-->
 <section>
-    <div>
+    <div class="banner relate">
         <flex-slider flex-slide="s in homeSlide track by $index" prev-text="" next-text="">
             <li>
-                <h3>{{s.title}}</h3>
+                <div class="slider">
+                    <h3 class="slider__head">{{s.title}}</h3>
+                    <p class="slider__title">{{s.title2}}</p>
+                </div>
                 <img ng-src="{{s.img}}" class="img-full">
-                <button class="btn btn-default">{{s.btntxt}}</button>
+                <div class="">
+                    <button class="btn btn-default btn--custom slider__btn">{{s.btntxt}}</button>
+                </div>
             </li>
         </flex-slider>
     </div>
@@ -175,8 +180,8 @@
     </div>
 </section>
 <section>
-    <div>
-        <img src="" alt="" class="img-responsive">
+    <div class="text-center">
+        <img src="img/home/time.png" alt="" class="img-responsive">
         <div>
             <p>
                 Auto-Replenish &amp; Never Run out of your Favourite Products.
@@ -185,8 +190,51 @@
         </div>
         <div>
             <ul class="list-unstyled list-inline">
-                <li></li>
+                <li ng-repeat="process in processSlide">
+                    <div>
+                        <img ng-src="{{process.img}}" alt="" class="img-responsive">
+                        <div>
+                            <h3>{{process.title}}</h3>
+                            <p>{{process.desc}}</p>
+                        </div>
+                    </div>
+                </li>
             </ul>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <div>
+                    <img src="img/home/signup.png" alt="" class="img-responsive">
+                    <div>
+                        <h3>Step into Savings</h3>
+                        <p>The more you shop with us, the greater rewards you recieve. Get 2.5% cashback on your very first
+                            purchase, and each purchase together.</p>
+                        <button class="btn btn-default">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div>
+                            <h3>Gifts For Him</h3>
+                            <p>Set a new benchmark with exclusive gift sets for the dapper gentleman in your life.</p>
+                            <div>
+                                <button class="btn btn-default">Give A Gift</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div>
+                            <img src="img/home/gift-image-01.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>

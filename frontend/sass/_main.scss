@@ -5,7 +5,41 @@ $brand-success: #84ce3c !default;
 $brand-warning: #ffec39 !default;
 $brand-danger: #fc483f !default;
 $brand-info: #000072 !default;
+$white: #ffffff !default;
+$black: #000000 !default;
+$dark-grey: #282828 !default;
+$base-darkcolor: #CE9965 !default;
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+@font-face {
+    font-family: 'pop-light';
+    src: url('../fonts/Poppins-Light.ttf');
+}
+
+@font-face {
+    font-family: 'pop-md';
+    src: url('../fonts/Poppins-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'pop-sb';
+    src: url('../fonts/Poppins-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'work-sansB';
+    src: url('../fonts/WorkSans-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'work-sansSB';
+    src: url('../fonts/WorkSans-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'work-sansR';
+    src: url('../fonts/WorkSans-Regular.ttf');
+}
+
 
 /* Bootstrap Variables Goes Here */
 
@@ -118,4 +152,69 @@ header {
 
 .nav-up {
     transform: translateY(-100%);
+}
+
+// CUSTOMIZE CSS STARTS HERE
+.relate {
+    position: relative;
+}
+
+.inblock {
+    display: inline-block;
+}
+
+.marg0 {
+    margin: 0;
+}
+
+.padd0 {
+    padding: 0;
+}
+
+.btn--custom {
+    @include button-variant($dark-grey,
+    transparent,
+    $dark-grey); // border: 1px solid $white; // width: 180px;
+    text-transform: uppercase; //font-weight: bold;
+    letter-spacing: 1px;
+    position: absolute;
+    bottom: 0;
+    font-family: 'pop-sb';
+    font-size: 12px;
+    padding: 8px 20px;
+    &:hover,
+    &:active,
+    &:focus {
+        // outline: none;
+        color: $dark-grey;
+        background-color: darken($base-darkcolor, 0); // border-color: darken($border, 12%);
+    }
+}
+
+.banner {
+    .slider {
+        position: absolute;
+        top: 14%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        .slider__head {
+            font-family: 'pop-sb';
+            text-transform: uppercase;
+            text-align: center;
+            color: $black;
+            letter-spacing: 1px;
+            margin: 0;
+        }
+        .slider__title {
+            font-family: 'work-sansR';
+            text-align: center;
+            font-size: 20px;
+        }
+    }
+    .slider__btn {
+        position: absolute;
+        bottom: 12%;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
 }
