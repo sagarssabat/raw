@@ -36,7 +36,7 @@
         <flex-slider flex-slide="s in homeSlide track by $index" prev-text="" next-text="">
             <li>
                 <div class="slider">
-                    <h3 class="slider__head">{{s.title}}</h3>
+                    <h4 class="slider__head">{{s.title}}</h4>
                     <p class="slider__title">{{s.title2}}</p>
                 </div>
                 <img ng-src="{{s.img}}" class="img-full">
@@ -48,54 +48,85 @@
     </div>
 </section>
 <section>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-6">
+    <div class="container-fluid deal-section">
+        <div class="row marg0">
+            <div class="col-md-6 sec-left">
                 <div class="row">
                     <div class="col-md-6">
-                        <img src="img/home/offer-1.png" alt="" class="img-responsive">
-                    </div>
-                    <div class="col-md-6">
-                        <div>
-                            <p class="text-uppercase black-lbl">Deal of the week</p>
-                            <h4 class="text-uppercase">Sale up to 30% A Week</h4>
+                        <div class="offer-img">
+                            <img src="img/home/img-1.png" alt="" class="img-responsive">
                         </div>
-                        <div>
-                            <h4>Morning Mojo<br>Coffee Bean Beard Oil</h4>
-                            <button class="btn btn-default shop-btn">Shop Now</button>
+                    </div>
+                    <div class="col-md-6 intable">
+                        <div class="bottom-align">
+                            <div class="deal-section__title">
+                                <p class="text-uppercase black-lbl">Deal of the week</p>
+                                <h4 class="text-uppercase">Sale up to 30% A Week</h4>
+                            </div>
+                            <div class="deal-section__timer">
+                                <ul class="list-unstyled list-inline">
+                                    <li>
+                                        <div class="time-block">
+                                            <p>01</p>
+                                            <p>DAYS</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="time-block">
+                                            <p>11</p>
+                                            <p>HOURS</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="time-block">
+                                            <p>52</p>
+                                            <p>MINUTES</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="deal-section__title2">
+                                <h4>Morning Mojo<br>Coffee Bean Beard Oil</h4>
+                                <button class="btn btn-default shop-btn">Shop Now</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 sec-right">
+                <div class="offer-img pose-right">
+                    <img src="img/home/img-2.png" alt="" class="img-responsive">
+                </div>
                 <div class="row">
-                    <div class="col-md-6">
-                        <div>
-                            <p class="text-uppercase black-lbl">New Arrival</p>
-                            <h4 class="text-uppercase">Wild Harvested from the heart of the forest</h4>
-                        </div>
-                        <div>
-                            <h4>Gold Volcanic Clay<br> &amp; Tonka Bean face Wash</h4>
-                            <button class="btn btn-default shop-btn">Shop Now</button>
+                    <div class="col-md-8 intable">
+                        <div class="bottom-align padd-left">
+                            <div class="deal-section__title">
+                                <p class="text-uppercase black-lbl">New Arrival</p>
+                                <h4 class="">Wild Harvested from the<br> heart of the forest</h4>
+                            </div>
+                            <div class="deal-section__title2">
+                                <h4>Gold Volcanic Clay<br> &amp; Tonka Bean face Wash</h4>
+                                <button class="btn btn-default shop-btn">Shop Now</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <img src="img/home/offer-2.png" alt="" class="img-responsive">
-                    </div>
+                    <!--<div class="col-md-6">
+                    </div>-->
                 </div>
             </div>
         </div>
     </div>
 </section>
 <section>
-    <div class="container-fluid">
+    <div class="container-fluid padd44">
         <div class="story">
-            <div>
-                <h3>Our Story</h3>
-                <div>
+            <div class="story-sec1">
+                <h4 class="story-sec1__head">Our Story</h4>
+                <hr>
+                <div class="story-sec1__head2">
                     <p>
-                        “Inspired by our travels to off-beat locations across the globe, we have sourced exotic ingredients of the highest quality
-                        to build a line of powerful grooming products for men.”
+                        “Inspired by our travels to off-beat locations across the globe, we have sourced exotic<br> ingredients
+                        of the highest quality to build a line of powerful grooming products for men.”
                     </p>
                     <p>
                         We find inspiration in outdated lore and urban legends, antiquated herbal wisdom and cutting edge research, native ritual
@@ -104,32 +135,24 @@
                     </p>
                 </div>
             </div>
-            <div class="text-center">
+            <div class="text-center story-sec2">
                 <ul class="list-inline list-unstyled">
                     <li>
-                        <div>
-                            <img src="img/home/st-icon-1.png" alt="" class="img-responsive">
-                        </div>
+                        <img src="img/home/st-icon-1.png" alt="" class="img-responsive">
                     </li>
                     <li>
-                        <div>
-                            <img src="img/home/st-icon-2.png" alt="" class="img-responsive">
-                        </div>
+                        <img src="img/home/st-icon-2.png" alt="" class="img-responsive">
                     </li>
                     <li>
-                        <div>
-                            <img src="img/home/st-icon-3.png" alt="" class="img-responsive">
-                        </div>
+                        <img src="img/home/st-icon-3.png" alt="" class="img-responsive">
                     </li>
                     <li>
-                        <div>
-                            <img src="img/home/st-icon-4.png" alt="" class="img-responsive">
-                        </div>
+                        <img src="img/home/st-icon-4.png" alt="" class="img-responsive">
                     </li>
                 </ul>
             </div>
-            <div>
-                <p>
+            <div class="story-sec3">
+                <p class="marg0">
                     NO ARTIFICIAL FRAGRANCE | NO ARTIFICIAL COLOR | ALL NATURAL ESSENTIAL OILS
                 </p>
                 <p>
@@ -138,14 +161,14 @@
                 <p>
                     All ingredients are either 100% Natural / Eco Certified & 100% safe to use.
                 </p>
-                <div>
-                    <a href="">Know More</a>
+                <div class="know">
+                    <a href="" class="text-uppercase">Know More</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<section>
+<section class="sec4">
     <div class="container">
         <!--<div class="row" ng-repeat="myProduct in myArray">
             <div class="col-md-4" ng-repeat="product in myProduct">
@@ -164,14 +187,14 @@
         <div class="product-list">
             <ul class="list-unstyled list list-inline" ng-repeat="myProduct in myArray">
                 <li ng-repeat="product in myProduct">
-                    <div>
-                        <h3>{{product.title}}</h3>
+                    <div class="product-block">
+                        <h3 class="product-block__head">{{product.title}}</h3>
                         <a href=" ">
                             <img ng-src="{{product.img}}" alt=" " class="img-responsive ">
                         </a>
-                        <div>
+                        <div class="product-block__text">
                             <p>{{product.desc}}</p>
-                            <button class="btn btn-default">{{product.btntxt}}</button>
+                            <button class="btn btn-default btn--custom">{{product.btntxt}}</button>
                         </div>
                     </div>
                 </li>

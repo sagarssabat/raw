@@ -13,20 +13,18 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
                 title2: 'who want to build empires and leave legacies behind.',
                 img: 'img/home/slide-1.jpg',
                 btntxt: 'Explore Raw Nature'
+            },
+            {
+                title: 'Enrichedd With Modern Notes of rosemary, orange and cedarwood',
+                title2: 'Create looks both Messy and Constructed.',
+                img: 'img/home/slide-2.png',
+                btntxt: 'Explore Raw Nature'
+            }, {
+                title: 'Inspired by American bourbon casks,',
+                title2: 'rare isrish whiskes and erupting volcanoes.',
+                img: 'img/home/slide-3.jpg',
+                btntxt: 'Explore Raw Nature'
             }
-            // ,
-            // {
-            //     title: 'Enrichedd With Modern Notes of rosemary, orange and cedarwood',
-            //     title2: 'Create looks both Messy and Constructed.',
-            //     img: 'img/home/slide-2.png',
-            //     btntxt: 'Explore Raw Nature'
-            // },
-            // {
-            //     title: 'Inspired by American bourbon casks,',
-            //     title2: 'rare isrish whiskes and erupting volcanoes.',
-            //     img: 'img/home/slide-3.jpg',
-            //     btntxt: 'Explore Raw Nature'
-            // }
         ];
         $scope.productSlide = [{
             title: 'Beard Care',
