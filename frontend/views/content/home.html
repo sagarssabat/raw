@@ -202,58 +202,64 @@
         </div>
     </div>
 </section>
-<section>
-    <div class="text-center">
-        <img src="img/home/time.png" alt="" class="img-responsive">
-        <div>
-            <p>
-                Auto-Replenish &amp; Never Run out of your Favourite Products.
-            </p>
-            <p>No Advance Payment | No Minimum Purchase Obligation</p>
-        </div>
-        <div>
-            <ul class="list-unstyled list-inline">
-                <li ng-repeat="process in processSlide">
-                    <div>
-                        <img ng-src="{{process.img}}" alt="" class="img-responsive">
+<section class="sec5">
+    <div class="container">
+        <div class="text-center process-flow">
+            <img src="img/home/time.png" alt="" class="img-responsive icon">
+            <div class="process1">
+                <h3 class="process__head marg0">
+                    Auto-Replenish &amp; Never Run out of your Favourite Products.
+                </h3>
+                <p class="process__content">No Advance Payment | No Minimum Purchase Obligation</p>
+            </div>
+            <div class="process2">
+                <ul class="list-unstyled list-inline">
+                    <li ng-repeat="process in processSlide">
+                        <img ng-src="{{process.img}}" alt="" class="img-responsive icon">
                         <div>
-                            <h3>{{process.title}}</h3>
-                            <p>{{process.desc}}</p>
+                            <h3 class="process__head">{{process.title}}</h3>
+                            <p class="process__content">{{process.desc}}</p>
                         </div>
-                    </div>
-                </li>
-            </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </section>
-<section>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-6">
-                <div>
-                    <img src="img/home/signup.png" alt="" class="img-responsive">
-                    <div>
-                        <h3>Step into Savings</h3>
-                        <p>The more you shop with us, the greater rewards you recieve. Get 2.5% cashback on your very first
-                            purchase, and each purchase together.</p>
-                        <button class="btn btn-default">Sign Up</button>
+<section class="sec6">
+    <div class="container-fluid padd0">
+        <div class="row marg0">
+            <div class="col-md-6 padd0">
+                <div class="sec-left">
+                    <div class="cell-table">
+                        <img src="img/home/signup.png" alt="" class="img-responsive step-img">
+                        <div>
+                            <h3 class="sec-head">Step into Savings</h3>
+                            <p class="sec-content">The more you shop with us, the greater rewards you recieve. Get 2.5% cashback on your very first
+                                purchase, and each purchase together.</p>
+                            <button class="btn btn-default btn--custom">Sign Up</button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div>
-                            <h3>Gifts For Him</h3>
-                            <p>Set a new benchmark with exclusive gift sets for the dapper gentleman in your life.</p>
-                            <div>
-                                <button class="btn btn-default">Give A Gift</button>
+            <div class="col-md-6 padd0">
+                <div class="sec-right">
+                    <div class="cell-table">
+                        <div class="row marg0">
+                            <div class="col-md-5">
+                                <div>
+                                    <h3 class="sec-head">Gifts For Him</h3>
+                                    <p class="sec-content">Set a new benchmark with exclusive gift sets for the dapper gentleman in your life.</p>
+                                    <div>
+                                        <button class="btn btn-default btn--custom">Give A Gift</button>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-md-8">
-                        <div>
-                            <img src="img/home/gift-image-01.png" alt="" class="img-responsive">
+                            <div class="col-md-7">
+                                <div>
+                                    <img src="img/home/gift-image-01.png" alt="" class="img-responsive">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

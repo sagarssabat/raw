@@ -9544,9 +9544,11 @@ header {
 .sec4 {
   background: #EBD2A9;
   padding: 50px 0; }
-  .sec4 .product-list li {
-    width: 33.33%;
-    padding: 0 12px; }
+  .sec4 .product-list ul {
+    margin-left: 0; }
+    .sec4 .product-list ul li {
+      width: 33.33%;
+      padding: 0 12px; }
   .sec4 .product-list ul:nth-child(2) {
     text-align: center;
     margin-top: 40px; }
@@ -9579,6 +9581,144 @@ header {
     .sec4 .product-block .product-block__text p {
       margin: 14px 0 20px;
       font-family: 'work-sansR'; }
+
+.sec5 {
+  background: #F4E9CB;
+  padding: 50px 0;
+  color: #282828; }
+  .sec5 .process-flow .icon {
+    margin: 0 auto;
+    width: 44px; }
+  .sec5 .process2 li {
+    width: 20%;
+    vertical-align: top;
+    margin: 0 20px; }
+  .sec5 .process1 {
+    margin: 20px 0 30px; }
+  .sec5 .process__head {
+    font-family: 'pop-md';
+    font-size: 22px;
+    text-transform: uppercase; }
+  .sec5 .process__content {
+    font-family: 'work-sansR';
+    font-size: 20px; }
+  .sec5 .process2 .process__content {
+    font-size: 14px; }
+
+.sec6 .sec-head {
+  font-family: 'pop-md';
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+
+.sec6 .sec-content {
+  font-family: 'work-sansR';
+  font-size: 14px;
+  letter-spacing: 1px; }
+
+.sec6 .sec-left {
+  background: #282828;
+  min-height: 350px;
+  color: #EBD2A9;
+  text-align: center;
+  display: table;
+  padding: 0px 80px; }
+  .sec6 .sec-left .step-img {
+    width: 70px;
+    margin: 0 auto; }
+  .sec6 .sec-left .btn--custom, .sec6 .sec-left .deal-section .shop-btn, .deal-section .sec6 .sec-left .shop-btn {
+    color: #EBD2A9;
+    background-color: transparent;
+    border-color: #EBD2A9;
+    color: #EBD2A9;
+    width: 180px;
+    margin-top: 20px; }
+    .sec6 .sec-left .btn--custom:focus, .sec6 .sec-left .deal-section .shop-btn:focus, .deal-section .sec6 .sec-left .shop-btn:focus, .sec6 .sec-left .btn--custom.focus, .sec6 .sec-left .deal-section .focus.shop-btn, .deal-section .sec6 .sec-left .focus.shop-btn {
+      color: #EBD2A9;
+      background-color: transparent;
+      border-color: #d39c42; }
+    .sec6 .sec-left .btn--custom:hover, .sec6 .sec-left .deal-section .shop-btn:hover, .deal-section .sec6 .sec-left .shop-btn:hover {
+      color: #EBD2A9;
+      background-color: transparent;
+      border-color: #dfb877; }
+    .sec6 .sec-left .btn--custom:active, .sec6 .sec-left .deal-section .shop-btn:active, .deal-section .sec6 .sec-left .shop-btn:active, .sec6 .sec-left .btn--custom.active, .sec6 .sec-left .deal-section .active.shop-btn, .deal-section .sec6 .sec-left .active.shop-btn,
+    .open > .sec6 .sec-left .btn--custom.dropdown-toggle,
+    .open > .sec6 .sec-left .deal-section .dropdown-toggle.shop-btn, .deal-section
+    .open > .sec6 .sec-left .dropdown-toggle.shop-btn {
+      color: #EBD2A9;
+      background-color: transparent;
+      border-color: #dfb877; }
+      .sec6 .sec-left .btn--custom:active:hover, .sec6 .sec-left .deal-section .shop-btn:active:hover, .deal-section .sec6 .sec-left .shop-btn:active:hover, .sec6 .sec-left .btn--custom:active:focus, .sec6 .sec-left .deal-section .shop-btn:active:focus, .deal-section .sec6 .sec-left .shop-btn:active:focus, .sec6 .sec-left .btn--custom:active.focus, .sec6 .sec-left .deal-section .shop-btn:active.focus, .deal-section .sec6 .sec-left .shop-btn:active.focus, .sec6 .sec-left .btn--custom.active:hover, .sec6 .sec-left .deal-section .active.shop-btn:hover, .deal-section .sec6 .sec-left .active.shop-btn:hover, .sec6 .sec-left .btn--custom.active:focus, .sec6 .sec-left .deal-section .active.shop-btn:focus, .deal-section .sec6 .sec-left .active.shop-btn:focus, .sec6 .sec-left .btn--custom.active.focus, .sec6 .sec-left .deal-section .active.focus.shop-btn, .deal-section .sec6 .sec-left .active.focus.shop-btn,
+      .open > .sec6 .sec-left .btn--custom.dropdown-toggle:hover,
+      .open > .sec6 .sec-left .deal-section .dropdown-toggle.shop-btn:hover, .deal-section
+      .open > .sec6 .sec-left .dropdown-toggle.shop-btn:hover,
+      .open > .sec6 .sec-left .btn--custom.dropdown-toggle:focus,
+      .open > .sec6 .sec-left .deal-section .dropdown-toggle.shop-btn:focus, .deal-section
+      .open > .sec6 .sec-left .dropdown-toggle.shop-btn:focus,
+      .open > .sec6 .sec-left .btn--custom.dropdown-toggle.focus,
+      .open > .sec6 .sec-left .deal-section .dropdown-toggle.focus.shop-btn, .deal-section
+      .open > .sec6 .sec-left .dropdown-toggle.focus.shop-btn {
+        color: #EBD2A9;
+        background-color: transparent;
+        border-color: #d39c42; }
+    .sec6 .sec-left .btn--custom:active, .sec6 .sec-left .deal-section .shop-btn:active, .deal-section .sec6 .sec-left .shop-btn:active, .sec6 .sec-left .btn--custom.active, .sec6 .sec-left .deal-section .active.shop-btn, .deal-section .sec6 .sec-left .active.shop-btn,
+    .open > .sec6 .sec-left .btn--custom.dropdown-toggle,
+    .open > .sec6 .sec-left .deal-section .dropdown-toggle.shop-btn, .deal-section
+    .open > .sec6 .sec-left .dropdown-toggle.shop-btn {
+      background-image: none; }
+    .sec6 .sec-left .btn--custom.disabled:hover, .sec6 .sec-left .deal-section .disabled.shop-btn:hover, .deal-section .sec6 .sec-left .disabled.shop-btn:hover, .sec6 .sec-left .btn--custom.disabled:focus, .sec6 .sec-left .deal-section .disabled.shop-btn:focus, .deal-section .sec6 .sec-left .disabled.shop-btn:focus, .sec6 .sec-left .btn--custom.disabled.focus, .sec6 .sec-left .deal-section .disabled.focus.shop-btn, .deal-section .sec6 .sec-left .disabled.focus.shop-btn, .sec6 .sec-left .btn--custom[disabled]:hover, .sec6 .sec-left .deal-section [disabled].shop-btn:hover, .deal-section .sec6 .sec-left [disabled].shop-btn:hover, .sec6 .sec-left .btn--custom[disabled]:focus, .sec6 .sec-left .deal-section [disabled].shop-btn:focus, .deal-section .sec6 .sec-left [disabled].shop-btn:focus, .sec6 .sec-left .btn--custom[disabled].focus, .sec6 .sec-left .deal-section [disabled].focus.shop-btn, .deal-section .sec6 .sec-left [disabled].focus.shop-btn,
+    fieldset[disabled] .sec6 .sec-left .btn--custom:hover,
+    fieldset[disabled] .sec6 .sec-left .deal-section .shop-btn:hover, .deal-section
+    fieldset[disabled] .sec6 .sec-left .shop-btn:hover,
+    fieldset[disabled] .sec6 .sec-left .btn--custom:focus,
+    fieldset[disabled] .sec6 .sec-left .deal-section .shop-btn:focus, .deal-section
+    fieldset[disabled] .sec6 .sec-left .shop-btn:focus,
+    fieldset[disabled] .sec6 .sec-left .btn--custom.focus,
+    fieldset[disabled] .sec6 .sec-left .deal-section .focus.shop-btn, .deal-section
+    fieldset[disabled] .sec6 .sec-left .focus.shop-btn {
+      background-color: transparent;
+      border-color: #EBD2A9; }
+    .sec6 .sec-left .btn--custom .badge, .sec6 .sec-left .deal-section .shop-btn .badge, .deal-section .sec6 .sec-left .shop-btn .badge {
+      color: transparent;
+      background-color: #EBD2A9; }
+
+.sec6 .sec-right {
+  background: #EAD2A9;
+  min-height: 350px;
+  display: table;
+  padding: 0px 50px; }
+  .sec6 .sec-right .btn--custom, .sec6 .sec-right .deal-section .shop-btn, .deal-section .sec6 .sec-right .shop-btn {
+    width: 180px; }
+
+.sec6 .cell-table {
+  display: table-cell;
+  vertical-align: middle; }
+
+.footer-menu {
+  padding: 44px;
+  background: #d1d1c7; }
+  .footer-menu a {
+    color: #282828;
+    text-decoration: none; }
+    .footer-menu a:hover {
+      text-decoration: none; }
+  .footer-menu .sec-head {
+    font-family: 'pop-sb';
+    text-transform: uppercase;
+    letter-spacing: 1px; }
+  .footer-menu .sec-content {
+    font-family: 'work-sansR';
+    letter-spacing: 1px; }
+  .footer-menu .social-icons .inblock {
+    vertical-align: middle;
+    margin-bottom: 0; }
+  .footer-menu .social-icons .icons {
+    width: 16px; }
+  .footer-menu .terms-link {
+    text-transform: uppercase;
+    font-family: 'work-sansB';
+    font-size: 12px;
+    letter-spacing: 1px; }
 
 #fancybox-loading,
 .fancybox-close,

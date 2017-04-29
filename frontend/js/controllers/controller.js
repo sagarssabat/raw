@@ -53,22 +53,22 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
             btntxt: 'Shop Skin care'
         }];
         $scope.processSlide = [{
-                img: 'img/home/icon-1.png',
+                img: 'img/home/icon1.png',
                 title: 'Shop',
                 desc: 'Choose the products that you want automatically shipped.'
             },
             {
-                img: 'img/home/icon-2.png',
+                img: 'img/home/icon2.png',
                 title: 'Schedule',
                 desc: 'Choose your delivery frequency (15-60 days).No Minimum Purchase Obligation Pause, Delay &amp; Restart at will.'
             },
             {
-                img: 'img/home/icon-3.png',
+                img: 'img/home/icon3.png',
                 title: 'Save',
                 desc: 'Get a lifetime discount of 15% on all your purchase under auto-replenishment.'
             },
             {
-                img: 'img/home/icon-4.png',
+                img: 'img/home/icon4.png',
                 title: 'Ship',
                 desc: 'Sit back &amp; relax! Your favorite products will reach you automatically whn they are due.'
             }

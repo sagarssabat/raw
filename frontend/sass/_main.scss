@@ -9,6 +9,7 @@ $white: #ffffff !default;
 $black: #000000 !default;
 $dark-grey: #282828 !default;
 $base-darkcolor: #CE9965 !default;
+$base-darker: #EAD2A9 !default;
 $base-lightcolor: #F4E9CB !default;
 $rose-lightcolor:#EBD2A9 !default;
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
@@ -458,9 +459,12 @@ header {
     background: $rose-lightcolor;
     padding: 50px 0;
     .product-list {
-        li {
-            width: 33.33%;
-            padding: 0 12px;
+        ul {
+            margin-left: 0;
+            li {
+                width: 33.33%;
+                padding: 0 12px;
+            }
         }
     }
     .product-list ul:nth-child(2) {
@@ -500,5 +504,124 @@ header {
                 font-family: 'work-sansR';
             }
         }
+    }
+}
+
+.sec5 {
+    background: $base-lightcolor;
+    padding: 50px 0;
+    color: $dark-grey;
+    .process-flow {
+        .icon {
+            margin: 0 auto;
+            width: 44px;
+        }
+    }
+    .process2 {
+        li {
+            width: 20%;
+            vertical-align: top;
+            margin: 0 20px;
+        }
+    }
+    .process1 {
+        margin: 20px 0 30px;
+    }
+    .process__head {
+        font-family: 'pop-md';
+        font-size: 22px;
+        text-transform: uppercase;
+    }
+    .process__content {
+        font-family: 'work-sansR';
+        font-size: 20px;
+    }
+    .process2 {
+        .process__content {
+            font-size: 14px;
+        }
+    }
+}
+
+.sec6 {
+    .sec-head {
+        font-family: 'pop-md';
+        font-size: 22px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    .sec-content {
+        font-family: 'work-sansR';
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+    .sec-left {
+        background: $dark-grey;
+        min-height: 350px;
+        color: $rose-lightcolor;
+        text-align: center;
+        display: table;
+        padding: 0px 80px;
+        .step-img {
+            width: 70px;
+            margin: 0 auto;
+        }
+        .btn--custom {
+            @include button-variant($rose-lightcolor,
+            transparent,
+            $rose-lightcolor);
+            color: $rose-lightcolor;
+            width: 180px;
+            margin-top: 20px;
+        }
+    }
+    .sec-right {
+        background: $base-darker;
+        min-height: 350px;
+        display: table;
+        padding: 0px 50px;
+        .btn--custom {
+            width: 180px;
+        }
+    }
+    .cell-table {
+        display: table-cell;
+        vertical-align: middle;
+    }
+}
+
+.footer-menu {
+    padding: 44px;
+    background: #d1d1c7;
+    a {
+        color: $dark-grey;
+        text-decoration: none;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    .sec-head {
+        font-family: 'pop-sb';
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    .sec-content {
+        font-family: 'work-sansR';
+        letter-spacing: 1px;
+    }
+    .social-icons {
+        .inblock {
+            vertical-align: middle;
+            margin-bottom: 0;
+        }
+        .icons {
+            width: 16px;
+        }
+    }
+    .terms-link {
+        text-transform: uppercase;
+        font-family: 'work-sansB';
+        font-size: 12px;
+        letter-spacing: 1px;
     }
 }
