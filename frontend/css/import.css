@@ -9194,10 +9194,17 @@ a,
 
 footer {
   font-size: 12px;
-  background-color: #eee;
-  padding: 10px 0; }
+  background-color: #282828;
+  padding: 10px 0;
+  color: #ffffff; }
   footer p {
     margin: 0; }
+  footer a {
+    color: #ffffff;
+    text-decoration: none; }
+    footer a:hover {
+      text-decoration: none;
+      color: #ffffff; }
 
 .input-lg, .input-group-lg > .form-control,
 .input-group-lg > .input-group-addon,
@@ -9267,6 +9274,73 @@ header {
 .padd0 {
   padding: 0; }
 
+.custom-navbar {
+  background: #282828;
+  border-color: #282828;
+  margin-bottom: 0;
+  padding: 15px 0; }
+  .custom-navbar .custom-nav li a {
+    color: #F4E9CB;
+    font-family: 'pop-sb';
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px; }
+    .custom-navbar .custom-nav li a:hover, .custom-navbar .custom-nav li a:focus, .custom-navbar .custom-nav li a:active {
+      background: transparent;
+      color: #F4E9CB; }
+  .custom-navbar .custom-logo {
+    padding: 0 15px; }
+  .custom-navbar .border-line {
+    position: relative; }
+    .custom-navbar .border-line:before {
+      content: '';
+      border: 1px inset #ead3a9;
+      display: block !important;
+      margin: 0 15px; }
+  .custom-navbar .custom-brand {
+    line-height: inherit;
+    height: inherit; }
+
+.custom-right {
+  margin-right: 0; }
+  .custom-right li {
+    padding: 30px 15px 0; }
+    .custom-right li a {
+      padding: 0;
+      position: relative; }
+  .custom-right .log-in li {
+    font-family: 'pop-light';
+    text-transform: uppercase;
+    position: relative; }
+    .custom-right .log-in li a {
+      color: #F4E9CB;
+      letter-spacing: 1px; }
+  .custom-right .log-in li + li a:before {
+    content: '/';
+    position: absolute;
+    top: 50%;
+    left: -35%;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    font-size: 10px;
+    font-weight: 700;
+    color: #f5ebcc; }
+  .custom-right .form-control {
+    background: transparent;
+    border: none;
+    padding: 6px 6px 6px 0; }
+  .custom-right .input-group {
+    border-bottom: 1px solid #dedede; }
+    .custom-right .input-group input[type="text"]::-webkit-input-placeholder {
+      font-family: 'work-sansR';
+      text-transform: uppercase; }
+  .custom-right .btn-search {
+    background: transparent;
+    border: none;
+    padding: 0; }
+    .custom-right .btn-search .fa {
+      color: #dedede; }
+
 .black-lbl {
   background: #000000;
   width: 180px;
@@ -9284,6 +9358,8 @@ header {
   letter-spacing: 1px;
   bottom: 0;
   font-family: 'pop-sb';
+  z-index: 0;
+  position: relative;
   font-size: 12px;
   padding: 8px 20px; }
   .btn--custom:focus, .deal-section .shop-btn:focus, .btn--custom.focus, .deal-section .focus.shop-btn {
@@ -9351,91 +9427,109 @@ header {
     transition-duration: 0.3s;
     transition-timing-function: ease-out; }
 
-.banner .flexslider {
-  border: none;
-  margin: 0; }
-  .banner .flexslider .flex-control-nav {
-    display: none; }
-  .banner .flexslider .flex-direction-nav .flex-prev {
-    left: 8% !important; }
-    .banner .flexslider .flex-direction-nav .flex-prev:before {
-      content: url("../img/flex-prev.png");
-      background-repeat: no-repeat; }
-  .banner .flexslider .flex-direction-nav .flex-next {
-    right: 8% !important; }
-    .banner .flexslider .flex-direction-nav .flex-next:before {
-      content: url("../img/flex-next.png");
-      background-repeat: no-repeat; }
-  .banner .flexslider .slides li:nth-child(n+2) .slider__head, .banner .flexslider .slides li:nth-child(n+2) li:nth-child(3) .slider__title,
-  .banner .flexslider .slides li:nth-child(n+2) .slider__title,
-  .banner .flexslider .slides li:nth-child(n+2) .slider__btn {
-    color: #ffffff; }
-  .banner .flexslider .slides li:nth-child(n+2) .slider__btn {
-    color: #ffffff;
-    background-color: transparent;
-    border-color: #ffffff; }
-    .banner .flexslider .slides li:nth-child(n+2) .slider__btn:focus, .banner .flexslider .slides li:nth-child(n+2) .slider__btn.focus {
+.banner {
+  padding-top: 60px; }
+  .banner .flexslider {
+    border: none;
+    margin: 0; }
+    .banner .flexslider .flex-control-nav {
+      display: none; }
+    .banner .flexslider .flex-direction-nav .flex-prev {
+      left: 8% !important; }
+      .banner .flexslider .flex-direction-nav .flex-prev:before {
+        content: url("../img/flex-prev.png");
+        background-repeat: no-repeat; }
+    .banner .flexslider .flex-direction-nav .flex-next {
+      right: 8% !important; }
+      .banner .flexslider .flex-direction-nav .flex-next:before {
+        content: url("../img/flex-next.png");
+        background-repeat: no-repeat; }
+    .banner .flexslider .slides li:nth-child(n+2) .slider__head, .banner .flexslider .slides li:nth-child(n+2) li:nth-child(3) .slider__title,
+    .banner .flexslider .slides li:nth-child(n+2) .slider__title,
+    .banner .flexslider .slides li:nth-child(n+2) .btn--custom,
+    .banner .flexslider .slides li:nth-child(n+2) .deal-section .shop-btn, .deal-section
+    .banner .flexslider .slides li:nth-child(n+2) .shop-btn {
+      color: #ffffff; }
+    .banner .flexslider .slides li:nth-child(n+2) .btn--custom, .banner .flexslider .slides li:nth-child(n+2) .deal-section .shop-btn, .deal-section .banner .flexslider .slides li:nth-child(n+2) .shop-btn {
       color: #ffffff;
       background-color: transparent;
-      border-color: #bfbfbf; }
-    .banner .flexslider .slides li:nth-child(n+2) .slider__btn:hover {
-      color: #ffffff;
-      background-color: transparent;
-      border-color: #e0e0e0; }
-    .banner .flexslider .slides li:nth-child(n+2) .slider__btn:active, .banner .flexslider .slides li:nth-child(n+2) .slider__btn.active,
-    .open > .banner .flexslider .slides li:nth-child(n+2) .slider__btn.dropdown-toggle {
-      color: #ffffff;
-      background-color: transparent;
-      border-color: #e0e0e0; }
-      .banner .flexslider .slides li:nth-child(n+2) .slider__btn:active:hover, .banner .flexslider .slides li:nth-child(n+2) .slider__btn:active:focus, .banner .flexslider .slides li:nth-child(n+2) .slider__btn:active.focus, .banner .flexslider .slides li:nth-child(n+2) .slider__btn.active:hover, .banner .flexslider .slides li:nth-child(n+2) .slider__btn.active:focus, .banner .flexslider .slides li:nth-child(n+2) .slider__btn.active.focus,
-      .open > .banner .flexslider .slides li:nth-child(n+2) .slider__btn.dropdown-toggle:hover,
-      .open > .banner .flexslider .slides li:nth-child(n+2) .slider__btn.dropdown-toggle:focus,
-      .open > .banner .flexslider .slides li:nth-child(n+2) .slider__btn.dropdown-toggle.focus {
+      border-color: #ffffff; }
+      .banner .flexslider .slides li:nth-child(n+2) .btn--custom:focus, .banner .flexslider .slides li:nth-child(n+2) .deal-section .shop-btn:focus, .deal-section .banner .flexslider .slides li:nth-child(n+2) .shop-btn:focus, .banner .flexslider .slides li:nth-child(n+2) .btn--custom.focus, .banner .flexslider .slides li:nth-child(n+2) .deal-section .focus.shop-btn, .deal-section .banner .flexslider .slides li:nth-child(n+2) .focus.shop-btn {
         color: #ffffff;
         background-color: transparent;
         border-color: #bfbfbf; }
-    .banner .flexslider .slides li:nth-child(n+2) .slider__btn:active, .banner .flexslider .slides li:nth-child(n+2) .slider__btn.active,
-    .open > .banner .flexslider .slides li:nth-child(n+2) .slider__btn.dropdown-toggle {
-      background-image: none; }
-    .banner .flexslider .slides li:nth-child(n+2) .slider__btn.disabled:hover, .banner .flexslider .slides li:nth-child(n+2) .slider__btn.disabled:focus, .banner .flexslider .slides li:nth-child(n+2) .slider__btn.disabled.focus, .banner .flexslider .slides li:nth-child(n+2) .slider__btn[disabled]:hover, .banner .flexslider .slides li:nth-child(n+2) .slider__btn[disabled]:focus, .banner .flexslider .slides li:nth-child(n+2) .slider__btn[disabled].focus,
-    fieldset[disabled] .banner .flexslider .slides li:nth-child(n+2) .slider__btn:hover,
-    fieldset[disabled] .banner .flexslider .slides li:nth-child(n+2) .slider__btn:focus,
-    fieldset[disabled] .banner .flexslider .slides li:nth-child(n+2) .slider__btn.focus {
-      background-color: transparent;
-      border-color: #ffffff; }
-    .banner .flexslider .slides li:nth-child(n+2) .slider__btn .badge {
-      color: transparent;
-      background-color: #ffffff; }
-  .banner .flexslider .slides li:nth-child(3) .slider__title {
-    font-size: 18px;
-    color: #ffffff !important; }
-
-.banner .slider {
-  position: absolute;
-  top: 14%;
-  left: 50%;
-  width: 100%;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0); }
-  .banner .slider .slider__head, .banner .slider .flexslider .slides li:nth-child(3) .slider__title, .banner .flexslider .slides li:nth-child(3) .slider .slider__title {
-    font-family: 'pop-sb';
-    text-transform: uppercase;
-    text-align: center;
-    color: #000000;
-    letter-spacing: 2px;
-    margin: 0; }
-  .banner .slider .slider__title {
-    font-family: 'work-sansR';
-    text-align: center;
-    font-size: 15px;
-    letter-spacing: 1px; }
-
-.banner .slider__btn {
-  position: absolute;
-  bottom: 12%;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0); }
+      .banner .flexslider .slides li:nth-child(n+2) .btn--custom:hover, .banner .flexslider .slides li:nth-child(n+2) .deal-section .shop-btn:hover, .deal-section .banner .flexslider .slides li:nth-child(n+2) .shop-btn:hover {
+        color: #ffffff;
+        background-color: transparent;
+        border-color: #e0e0e0; }
+      .banner .flexslider .slides li:nth-child(n+2) .btn--custom:active, .banner .flexslider .slides li:nth-child(n+2) .deal-section .shop-btn:active, .deal-section .banner .flexslider .slides li:nth-child(n+2) .shop-btn:active, .banner .flexslider .slides li:nth-child(n+2) .btn--custom.active, .banner .flexslider .slides li:nth-child(n+2) .deal-section .active.shop-btn, .deal-section .banner .flexslider .slides li:nth-child(n+2) .active.shop-btn,
+      .open > .banner .flexslider .slides li:nth-child(n+2) .btn--custom.dropdown-toggle,
+      .open > .banner .flexslider .slides li:nth-child(n+2) .deal-section .dropdown-toggle.shop-btn, .deal-section
+      .open > .banner .flexslider .slides li:nth-child(n+2) .dropdown-toggle.shop-btn {
+        color: #ffffff;
+        background-color: transparent;
+        border-color: #e0e0e0; }
+        .banner .flexslider .slides li:nth-child(n+2) .btn--custom:active:hover, .banner .flexslider .slides li:nth-child(n+2) .deal-section .shop-btn:active:hover, .deal-section .banner .flexslider .slides li:nth-child(n+2) .shop-btn:active:hover, .banner .flexslider .slides li:nth-child(n+2) .btn--custom:active:focus, .banner .flexslider .slides li:nth-child(n+2) .deal-section .shop-btn:active:focus, .deal-section .banner .flexslider .slides li:nth-child(n+2) .shop-btn:active:focus, .banner .flexslider .slides li:nth-child(n+2) .btn--custom:active.focus, .banner .flexslider .slides li:nth-child(n+2) .deal-section .shop-btn:active.focus, .deal-section .banner .flexslider .slides li:nth-child(n+2) .shop-btn:active.focus, .banner .flexslider .slides li:nth-child(n+2) .btn--custom.active:hover, .banner .flexslider .slides li:nth-child(n+2) .deal-section .active.shop-btn:hover, .deal-section .banner .flexslider .slides li:nth-child(n+2) .active.shop-btn:hover, .banner .flexslider .slides li:nth-child(n+2) .btn--custom.active:focus, .banner .flexslider .slides li:nth-child(n+2) .deal-section .active.shop-btn:focus, .deal-section .banner .flexslider .slides li:nth-child(n+2) .active.shop-btn:focus, .banner .flexslider .slides li:nth-child(n+2) .btn--custom.active.focus, .banner .flexslider .slides li:nth-child(n+2) .deal-section .active.focus.shop-btn, .deal-section .banner .flexslider .slides li:nth-child(n+2) .active.focus.shop-btn,
+        .open > .banner .flexslider .slides li:nth-child(n+2) .btn--custom.dropdown-toggle:hover,
+        .open > .banner .flexslider .slides li:nth-child(n+2) .deal-section .dropdown-toggle.shop-btn:hover, .deal-section
+        .open > .banner .flexslider .slides li:nth-child(n+2) .dropdown-toggle.shop-btn:hover,
+        .open > .banner .flexslider .slides li:nth-child(n+2) .btn--custom.dropdown-toggle:focus,
+        .open > .banner .flexslider .slides li:nth-child(n+2) .deal-section .dropdown-toggle.shop-btn:focus, .deal-section
+        .open > .banner .flexslider .slides li:nth-child(n+2) .dropdown-toggle.shop-btn:focus,
+        .open > .banner .flexslider .slides li:nth-child(n+2) .btn--custom.dropdown-toggle.focus,
+        .open > .banner .flexslider .slides li:nth-child(n+2) .deal-section .dropdown-toggle.focus.shop-btn, .deal-section
+        .open > .banner .flexslider .slides li:nth-child(n+2) .dropdown-toggle.focus.shop-btn {
+          color: #ffffff;
+          background-color: transparent;
+          border-color: #bfbfbf; }
+      .banner .flexslider .slides li:nth-child(n+2) .btn--custom:active, .banner .flexslider .slides li:nth-child(n+2) .deal-section .shop-btn:active, .deal-section .banner .flexslider .slides li:nth-child(n+2) .shop-btn:active, .banner .flexslider .slides li:nth-child(n+2) .btn--custom.active, .banner .flexslider .slides li:nth-child(n+2) .deal-section .active.shop-btn, .deal-section .banner .flexslider .slides li:nth-child(n+2) .active.shop-btn,
+      .open > .banner .flexslider .slides li:nth-child(n+2) .btn--custom.dropdown-toggle,
+      .open > .banner .flexslider .slides li:nth-child(n+2) .deal-section .dropdown-toggle.shop-btn, .deal-section
+      .open > .banner .flexslider .slides li:nth-child(n+2) .dropdown-toggle.shop-btn {
+        background-image: none; }
+      .banner .flexslider .slides li:nth-child(n+2) .btn--custom.disabled:hover, .banner .flexslider .slides li:nth-child(n+2) .deal-section .disabled.shop-btn:hover, .deal-section .banner .flexslider .slides li:nth-child(n+2) .disabled.shop-btn:hover, .banner .flexslider .slides li:nth-child(n+2) .btn--custom.disabled:focus, .banner .flexslider .slides li:nth-child(n+2) .deal-section .disabled.shop-btn:focus, .deal-section .banner .flexslider .slides li:nth-child(n+2) .disabled.shop-btn:focus, .banner .flexslider .slides li:nth-child(n+2) .btn--custom.disabled.focus, .banner .flexslider .slides li:nth-child(n+2) .deal-section .disabled.focus.shop-btn, .deal-section .banner .flexslider .slides li:nth-child(n+2) .disabled.focus.shop-btn, .banner .flexslider .slides li:nth-child(n+2) .btn--custom[disabled]:hover, .banner .flexslider .slides li:nth-child(n+2) .deal-section [disabled].shop-btn:hover, .deal-section .banner .flexslider .slides li:nth-child(n+2) [disabled].shop-btn:hover, .banner .flexslider .slides li:nth-child(n+2) .btn--custom[disabled]:focus, .banner .flexslider .slides li:nth-child(n+2) .deal-section [disabled].shop-btn:focus, .deal-section .banner .flexslider .slides li:nth-child(n+2) [disabled].shop-btn:focus, .banner .flexslider .slides li:nth-child(n+2) .btn--custom[disabled].focus, .banner .flexslider .slides li:nth-child(n+2) .deal-section [disabled].focus.shop-btn, .deal-section .banner .flexslider .slides li:nth-child(n+2) [disabled].focus.shop-btn,
+      fieldset[disabled] .banner .flexslider .slides li:nth-child(n+2) .btn--custom:hover,
+      fieldset[disabled] .banner .flexslider .slides li:nth-child(n+2) .deal-section .shop-btn:hover, .deal-section
+      fieldset[disabled] .banner .flexslider .slides li:nth-child(n+2) .shop-btn:hover,
+      fieldset[disabled] .banner .flexslider .slides li:nth-child(n+2) .btn--custom:focus,
+      fieldset[disabled] .banner .flexslider .slides li:nth-child(n+2) .deal-section .shop-btn:focus, .deal-section
+      fieldset[disabled] .banner .flexslider .slides li:nth-child(n+2) .shop-btn:focus,
+      fieldset[disabled] .banner .flexslider .slides li:nth-child(n+2) .btn--custom.focus,
+      fieldset[disabled] .banner .flexslider .slides li:nth-child(n+2) .deal-section .focus.shop-btn, .deal-section
+      fieldset[disabled] .banner .flexslider .slides li:nth-child(n+2) .focus.shop-btn {
+        background-color: transparent;
+        border-color: #ffffff; }
+      .banner .flexslider .slides li:nth-child(n+2) .btn--custom .badge, .banner .flexslider .slides li:nth-child(n+2) .deal-section .shop-btn .badge, .deal-section .banner .flexslider .slides li:nth-child(n+2) .shop-btn .badge {
+        color: transparent;
+        background-color: #ffffff; }
+    .banner .flexslider .slides li:nth-child(3) .slider__title {
+      font-size: 18px;
+      color: #ffffff !important; }
+  .banner .slider {
+    position: absolute;
+    top: 14%;
+    left: 50%;
+    width: 100%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0); }
+    .banner .slider .slider__head, .banner .slider .flexslider .slides li:nth-child(3) .slider__title, .banner .flexslider .slides li:nth-child(3) .slider .slider__title {
+      font-family: 'pop-sb';
+      text-transform: uppercase;
+      text-align: center;
+      color: #000000;
+      letter-spacing: 2px;
+      margin: 0; }
+    .banner .slider .slider__title {
+      font-family: 'work-sansR';
+      text-align: center;
+      font-size: 15px;
+      letter-spacing: 1px; }
+  .banner .slider__btn {
+    position: absolute;
+    bottom: 12%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0); }
 
 .deal-section {
   padding: 0; }
@@ -9593,6 +9687,16 @@ header {
     width: 20%;
     vertical-align: top;
     margin: 0 20px; }
+  .sec5 .process2 li + li .process-icon {
+    position: relative; }
+    .sec5 .process2 li + li .process-icon:before {
+      content: '\f04b';
+      font: normal normal normal 14px/1 FontAwesome;
+      position: absolute;
+      top: 50%;
+      left: -14%;
+      -webkit-transform: translate(0, -50%);
+              transform: translate(0, -50%); }
   .sec5 .process1 {
     margin: 20px 0 30px; }
   .sec5 .process__head {
@@ -9603,7 +9707,7 @@ header {
     font-family: 'work-sansR';
     font-size: 20px; }
   .sec5 .process2 .process__content {
-    font-size: 14px; }
+    font-size: 15px; }
 
 .sec6 .sec-head {
   font-family: 'pop-md';
@@ -9697,6 +9801,8 @@ header {
 .footer-menu {
   padding: 44px;
   background: #d1d1c7; }
+  .footer-menu p {
+    margin: 0; }
   .footer-menu a {
     color: #282828;
     text-decoration: none; }
@@ -9709,6 +9815,8 @@ header {
   .footer-menu .sec-content {
     font-family: 'work-sansR';
     letter-spacing: 1px; }
+    .footer-menu .sec-content li {
+      vertical-align: middle; }
   .footer-menu .social-icons .inblock {
     vertical-align: middle;
     margin-bottom: 0; }
@@ -9718,7 +9826,8 @@ header {
     text-transform: uppercase;
     font-family: 'work-sansB';
     font-size: 12px;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    margin-top: 20px; }
 
 #fancybox-loading,
 .fancybox-close,

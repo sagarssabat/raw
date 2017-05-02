@@ -40,8 +40,8 @@
                     <p class="slider__title">{{s.title2}}</p>
                 </div>
                 <img ng-src="{{s.img}}" class="img-full">
-                <div class="">
-                    <button class="btn btn-default btn--custom slider__btn">{{s.btntxt}}</button>
+                <div class="slider__btn">
+                    <button class="btn btn-default btn--custom">{{s.btntxt}}</button>
                 </div>
             </li>
         </flex-slider>
@@ -215,7 +215,9 @@
             <div class="process2">
                 <ul class="list-unstyled list-inline">
                     <li ng-repeat="process in processSlide">
-                        <img ng-src="{{process.img}}" alt="" class="img-responsive icon">
+                        <div class="process-icon">
+                            <img ng-src="{{process.img}}" alt="" class="img-responsive icon">
+                        </div>
                         <div>
                             <h3 class="process__head">{{process.title}}</h3>
                             <p class="process__content">{{process.desc}}</p>
