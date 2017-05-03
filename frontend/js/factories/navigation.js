@@ -3,12 +3,12 @@ myApp.factory('NavigationService', function () {
         name: "Shop",
         classis: "active",
         anchor: "home",
-        subnav: []
-        // subnav: [{
-        //     name: "Subnav1",
-        //     classis: "active",
-        //     anchor: "home"
-        // }]
+        // subnav: []
+        subnav: [{
+            name: "Subnav1",
+            classis: "active",
+            anchor: "home"
+        }]
     }, {
         name: "Gift Sets",
         classis: "active",
