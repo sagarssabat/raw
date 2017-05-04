@@ -1,0 +1,94 @@
+<div class="container">
+    <section>
+        <div class="banner">
+            <ol class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shower</a></li>
+                <li class="active"><a href="#">Body Wash | Gold Glay and Tonka Bean Oil</a></li>
+            </ol>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <flex-slider flex-slide="s in mySlides track by $index" prev-text="" next-text="" control-nav="thumbnails">
+                <li data-thumb="{{s}}">
+                    <img ng-src="{{s}}" class="img-full img-responsive">
+                </li>
+            </flex-slider>
+        </div>
+    </section>
+    <section>
+        <div>
+            <flex-slider class="saying-slide text-center" animation="slide" flex-slide="test in testSlide track by $index" prev-text=""
+                next-text="">
+                <li>
+                    <div>
+                        <h3 class="test-head">{{test.head}}</h3>
+                        <div>
+                            <p class="test-content">{{test.content}}</p>
+                            <p class="text-name">{{test.name}}</p>
+                        </div>
+                    </div>
+                </li>
+            </flex-slider>
+        </div>
+    </section>
+    <section>
+        <div class="product-option">
+            <h3 class="text-center">You May Also Like</h3>
+            <div class="row">
+                <div class="col-md-4" ng-repeat="product in productSlide">
+                    <img ng-src="{{product.img}}" alt="" class="img-responsive">
+                    <div>
+                        <p>{{product.name}}</p>
+                        <p>{{product.cost}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-default">View All</button>
+            </div>
+        </div>
+    </section>
+</div>
+<section class="sec6">
+    <div class="container-fluid padd0">
+        <div class="row marg0">
+            <div class="col-md-6 padd0">
+                <div class="sec-left">
+                    <div class="cell-table">
+                        <img src="img/home/signup.png" alt="" class="img-responsive step-img">
+                        <div>
+                            <h3 class="sec-head">Step into Savings</h3>
+                            <p class="sec-content">The more you shop with us, the greater rewards you recieve. Get 2.5% cashback on your very first
+                                purchase, and each purchase together.</p>
+                            <button class="btn btn-default btn--custom">Sign Up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 padd0">
+                <div class="sec-right">
+                    <div class="cell-table">
+                        <div class="row marg0">
+                            <div class="col-md-5">
+                                <div>
+                                    <h3 class="sec-head">Gifts For Him</h3>
+                                    <p class="sec-content">Set a new benchmark with exclusive gift sets for the dapper gentleman in your life.</p>
+                                    <div>
+                                        <button class="btn btn-default btn--custom">Give A Gift</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <div>
+                                    <img src="img/home/gift-image-01.png" alt="" class="img-responsive">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

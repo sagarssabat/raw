@@ -48,7 +48,7 @@ $rose-lightcolor:#EBD2A9 !default;
 
 @import "other/font-fix";
 body {
-    padding-top: 70px;
+    // padding-top: 70px;
 }
 
 img.loading {
@@ -196,11 +196,40 @@ header {
     padding: 0;
 }
 
+.arrow_box {
+    position: relative;
+}
+
+.arrow_box:after,
+.arrow_box:before {
+    bottom: 100%;
+    left: 10%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.arrow_box:after {
+    // border-color: rgba(136, 183, 213, 0);
+    border-bottom-color: #282828;
+    border-width: 10px;
+    margin-left: -34px;
+}
+
+.arrow_box:before {
+    // border-color: rgba(194, 225, 245, 0);
+    border-bottom-color: #ead3a9;
+    border-width: 12px;
+    margin-left: -36px;
+}
+
 .custom-navbar {
     background: $dark-grey;
     border-color: $dark-grey;
-    margin-bottom: 0;
-    padding: 15px 0;
+    margin-bottom: 0; // padding: 15px 0 0;
     .custom-nav {
         li {
             a {
@@ -209,11 +238,46 @@ header {
                 text-transform: uppercase;
                 letter-spacing: 2px;
                 font-size: 12px;
+                padding-bottom: 30px;
                 &:hover,
                 &:focus,
                 &:active {
                     background: transparent;
                     color: $base-lightcolor;
+                }
+            }
+        }
+        .drop-panel {
+            background: $dark-grey;
+            border-top: 1px solid $rose-lightcolor;
+            position: absolute;
+            top: 66px;
+            width: 550px;
+            padding: 20px;
+            ul+ul {
+                margin-left: 50px;
+            }
+            .custom-dropdown {
+                position: relative;
+                vertical-align: top;
+                li:first-child {
+                    margin-bottom: 8px;
+                    padding-bottom: 8px;
+                    border-bottom: 1px solid $rose-lightcolor;
+                    a {
+                        font-family: 'pop-sb';
+                        text-transform: inherit;
+                        font-size: 11px;
+                    }
+                }
+                a {
+                    font-family: 'work-sansR';
+                    letter-spacing: 1px;
+                    font-size: 10px;
+                    text-decoration: none;
+                    &:hover {
+                        text-decoration: none;
+                    }
                 }
             }
         }
@@ -345,7 +409,7 @@ header {
 //     transform: scale(1);
 // }
 .banner {
-    padding-top: 60px;
+    padding-top: 130px;
     .flexslider {
         border: none;
         margin: 0;

@@ -23,6 +23,11 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locat
             templateUrl: tempateURL,
             controller: 'HomeCtrl'
         })
+        .state('product-description', {
+            url: "/product-description",
+            templateUrl: tempateURL,
+            controller: 'productDescriptionCtrl'
+        })
         .state('form', {
             url: "/form",
             templateUrl: tempateURL,

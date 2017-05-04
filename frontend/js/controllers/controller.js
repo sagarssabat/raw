@@ -3,11 +3,11 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
         TemplateService.title = "Home"; //This is the Title of the Website
         $scope.navigation = NavigationService.getNavigation();
 
-        $scope.mySlides = [
-            'img/home/slide-1.jpg',
-            'img/home/slide-2.jpg',
-            'img/home/slide-3.jpg'
-        ];
+        // $scope.mySlides = [
+        //     'img/home/slide-1.jpg',
+        //     'img/home/slide-2.jpg',
+        //     'img/home/slide-3.jpg'
+        // ];
         $scope.homeSlide = [{
                 title: 'Grooming Essentials Tailored For Men',
                 title2: 'who want to build empires and leave legacies behind.',
@@ -87,7 +87,45 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
 
 
     })
-
+    .controller('productDescriptionCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
+        $scope.template = TemplateService.getHTML("content/product-description.html");
+        TemplateService.title = "Product Description"; //This is the Title of the Website
+        $scope.navigation = NavigationService.getNavigation();
+        $scope.mySlides = [
+            'img/product-desc/thumb-1.png',
+            'img/product-desc/thumb-2.png',
+            'img/product-desc/thumb-1.png'
+        ];
+        $scope.testSlide = [{
+                head: 'What People Are Saying?',
+                content: '"A Daily must for those whom have a daily must abed their mind. This is a planet Cleansisng, emotionally rebranding hot scotch and thumpon needs to give one a nose on ones frined and contemporaries"',
+                name: 'Praveen Kumar | Athelete'
+            },
+            {
+                head: 'What People Are Saying?',
+                content: '"A Daily must for those whom have a daily must abed their mind. This is a planet Cleansisng, emotionally rebranding hot scotch and thumpon needs to give one a nose on ones frined and contemporaries"',
+                name: 'Praveen Kumar | Athelete'
+            },
+            {
+                head: 'What People Are Saying?',
+                content: '"A Daily must for those whom have a daily must abed their mind. This is a planet Cleansisng, emotionally rebranding hot scotch and thumpon needs to give one a nose on ones frined and contemporaries"',
+                name: 'Praveen Kumar | Athelete'
+            }
+        ];
+        $scope.productSlide = [{
+            img: 'img/product-desc/category1.jpg',
+            name: 'Beard Oil',
+            cost: 'Rs. 700'
+        }, {
+            img: 'img/product-desc/category2.jpg',
+            name: 'Hair Wash',
+            cost: 'Rs. 650'
+        }, {
+            img: 'img/product-desc/category3.jpg',
+            name: 'Face Wash',
+            cost: 'Rs. 650'
+        }]
+    })
     .controller('FormCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
         $scope.template = TemplateService.getHTML("content/form.html");
         TemplateService.title = "Form"; //This is the Title of the Website
@@ -97,6 +135,7 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
             console.log(data);
             $scope.formSubmitted = true;
         };
+
     })
 
     //Example API Controller
