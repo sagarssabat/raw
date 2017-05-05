@@ -817,3 +817,101 @@ header {
         margin-top: 20px;
     }
 }
+
+// Product Description Custom Css Here
+.product-description {
+    .saying-slide {
+        background: $base-lightcolor;
+        padding: 50px 0;
+        hr {
+            width: 160px;
+            margin: 0 auto;
+            border-top: 1px solid $dark-grey;
+        }
+        .flex-control-nav {
+            display: none;
+        }
+        .flexslider {
+            background: transparent;
+            border: none;
+            margin: 0;
+        }
+        .flex-direction-nav {
+            .flex-prev,
+            .flex-next {
+                opacity: 1;
+            }
+            .flex-prev {
+                &:before {
+                    // content: url("../img/flex-prev.png");
+                    // background-repeat: no-repeat;
+                    content: '';
+                    background: url("../img/flex-prev.png");
+                    background-repeat: no-repeat;
+                    background-size: 9px 16px;
+                    padding: 10px;
+                    background-position: center center;
+                }
+            }
+            .flex-next {
+                &:before {
+                    content: '';
+                    background: url("../img/flex-next.png");
+                    background-repeat: no-repeat;
+                    background-size: 9px 16px;
+                    padding: 10px;
+                    background-position: center center;
+                }
+            }
+        }
+        .test-head {
+            font-family: 'pop-md';
+            text-transform: uppercase;
+            font-size: 20px;
+            letter-spacing: 1px;
+        }
+        .slider-content {
+            padding: 0 100px;
+            margin-top: 20px;
+            .test-content {
+                font-family: 'work-sansR';
+                margin-bottom: 20px;
+            }
+            .test-name {
+                color: #d8af81;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-size: 11px;
+            }
+        }
+    }
+    .product-slide {
+        background: inherit;
+        .product-slide__block {
+            line-height: 1.9;
+            margin-top: 10px;
+            p {
+                margin: 0;
+            }
+        }
+    }
+    .product-block {
+        margin: 40px 0;
+    }
+    .product-option {
+        .btn--custom {
+            width: 160px; // @include button-variant($dark-grey,
+            // transparent,
+            // $dark-grey);
+        }
+        .prod-name {
+            font-family: 'pop-sb';
+        }
+        .prod-cost {
+            font-family: 'pop-md';
+        }
+        .mgtop40 {
+            margin-top: 40px;
+        }
+    }
+}

@@ -2,7 +2,7 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
         $scope.template = TemplateService.getHTML("content/home.html");
         TemplateService.title = "Home"; //This is the Title of the Website
         $scope.navigation = NavigationService.getNavigation();
-
+        $scope.oneAtATime = true;
         // $scope.mySlides = [
         //     'img/home/slide-1.jpg',
         //     'img/home/slide-2.jpg',
@@ -91,13 +91,14 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
         $scope.template = TemplateService.getHTML("content/product-description.html");
         TemplateService.title = "Product Description"; //This is the Title of the Website
         $scope.navigation = NavigationService.getNavigation();
+        $scope.oneAtATime = true;
         $scope.mySlides = [
             'img/product-desc/thumb-1.png',
             'img/product-desc/thumb-2.png',
             'img/product-desc/thumb-1.png'
         ];
         $scope.testSlide = [{
-                head: 'What People Are Saying?',
+                // head: 'What People Are Saying?',
                 content: '"A Daily must for those whom have a daily must abed their mind. This is a planet Cleansisng, emotionally rebranding hot scotch and thumpon needs to give one a nose on ones frined and contemporaries"',
                 name: 'Praveen Kumar | Athelete'
             },
@@ -107,7 +108,7 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
                 name: 'Praveen Kumar | Athelete'
             },
             {
-                head: 'What People Are Saying?',
+                // head: 'What People Are Saying?',
                 content: '"A Daily must for those whom have a daily must abed their mind. This is a planet Cleansisng, emotionally rebranding hot scotch and thumpon needs to give one a nose on ones frined and contemporaries"',
                 name: 'Praveen Kumar | Athelete'
             }

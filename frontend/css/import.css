@@ -9877,6 +9877,76 @@ header {
     letter-spacing: 1px;
     margin-top: 20px; }
 
+.product-description .saying-slide {
+  background: #F4E9CB;
+  padding: 50px 0; }
+  .product-description .saying-slide hr {
+    width: 160px;
+    margin: 0 auto;
+    border-top: 1px solid #282828; }
+  .product-description .saying-slide .flex-control-nav {
+    display: none; }
+  .product-description .saying-slide .flexslider {
+    background: transparent;
+    border: none;
+    margin: 0; }
+  .product-description .saying-slide .flex-direction-nav .flex-prev,
+  .product-description .saying-slide .flex-direction-nav .flex-next {
+    opacity: 1; }
+  .product-description .saying-slide .flex-direction-nav .flex-prev:before {
+    content: '';
+    background: url("../img/flex-prev.png");
+    background-repeat: no-repeat;
+    background-size: 9px 16px;
+    padding: 10px;
+    background-position: center center; }
+  .product-description .saying-slide .flex-direction-nav .flex-next:before {
+    content: '';
+    background: url("../img/flex-next.png");
+    background-repeat: no-repeat;
+    background-size: 9px 16px;
+    padding: 10px;
+    background-position: center center; }
+  .product-description .saying-slide .test-head {
+    font-family: 'pop-md';
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 1px; }
+  .product-description .saying-slide .slider-content {
+    padding: 0 100px;
+    margin-top: 20px; }
+    .product-description .saying-slide .slider-content .test-content {
+      font-family: 'work-sansR';
+      margin-bottom: 20px; }
+    .product-description .saying-slide .slider-content .test-name {
+      color: #d8af81;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 11px; }
+
+.product-description .product-slide {
+  background: inherit; }
+  .product-description .product-slide .product-slide__block {
+    line-height: 1.9;
+    margin-top: 10px; }
+    .product-description .product-slide .product-slide__block p {
+      margin: 0; }
+
+.product-description .product-block {
+  margin: 40px 0; }
+
+.product-description .product-option .btn--custom, .product-description .product-option .deal-section .shop-btn, .deal-section .product-description .product-option .shop-btn {
+  width: 160px; }
+
+.product-description .product-option .prod-name {
+  font-family: 'pop-sb'; }
+
+.product-description .product-option .prod-cost {
+  font-family: 'pop-md'; }
+
+.product-description .product-option .mgtop40 {
+  margin-top: 40px; }
+
 #fancybox-loading,
 .fancybox-close,
 .fancybox-next span,
