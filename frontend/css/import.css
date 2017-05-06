@@ -9274,6 +9274,16 @@ header {
 .arrow_box {
   position: relative; }
 
+.custom-crumb {
+  background-color: transparent; }
+  .custom-crumb li + li:before {
+    content: "> "; }
+
+.flexslider {
+  background: transparent;
+  border: none;
+  margin: 0; }
+
 .arrow_box:after,
 .arrow_box:before {
   bottom: 100%;
@@ -9877,6 +9887,46 @@ header {
     letter-spacing: 1px;
     margin-top: 20px; }
 
+.product-description .addcart-section {
+  background: #e7e3d8;
+  padding-bottom: 60px; }
+  .product-description .addcart-section .addcart-slider .flex-control-thumbs li {
+    width: 33.33%; }
+  .product-description .addcart-section .left-section .head-sec1 p {
+    margin: 0; }
+  .product-description .addcart-section .left-section .head-sec1 .head1 {
+    font-family: 'pop-light';
+    text-transform: uppercase;
+    letter-spacing: 1px; }
+  .product-description .addcart-section .left-section .head-sec1 .head2 {
+    color: #d4ac83;
+    font-family: 'work-sansR';
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 20px; }
+  .product-description .addcart-section .left-section .head-sec2 .inblock {
+    vertical-align: bottom; }
+  .product-description .addcart-section .accordion-block .panel-group .panel-heading {
+    padding: 0; }
+  .product-description .addcart-section .accordion-block .panel-group .head-title {
+    padding: 10px 15px; }
+  .product-description .addcart-section .accordion-block .panel-group .panel-title a {
+    text-decoration: none; }
+    .product-description .addcart-section .accordion-block .panel-group .panel-title a:hover {
+      text-decoration: none; }
+  .product-description .addcart-section .accordion-block .panel-group .panel {
+    background: transparent;
+    box-shadow: none;
+    border: 1px solid #cf9c69;
+    border-left: transparent;
+    border-right: transparent;
+    border-radius: 0; }
+  .product-description .addcart-section .accordion-block .panel-group .panel + .panel {
+    margin-top: 0;
+    border-top: 1px solid transparent; }
+  .product-description .addcart-section .accordion-block .panel-default .panel-heading {
+    background: transparent; }
+
 .product-description .saying-slide {
   background: #F4E9CB;
   padding: 50px 0; }
@@ -9886,10 +9936,6 @@ header {
     border-top: 1px solid #282828; }
   .product-description .saying-slide .flex-control-nav {
     display: none; }
-  .product-description .saying-slide .flexslider {
-    background: transparent;
-    border: none;
-    margin: 0; }
   .product-description .saying-slide .flex-direction-nav .flex-prev,
   .product-description .saying-slide .flex-direction-nav .flex-next {
     opacity: 1; }

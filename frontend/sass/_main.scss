@@ -200,6 +200,19 @@ header {
     position: relative;
 }
 
+.custom-crumb {
+    background-color: transparent;
+    li+li:before {
+        content: "> ";
+    }
+}
+
+.flexslider {
+    background: transparent;
+    border: none;
+    margin: 0;
+}
+
 .arrow_box:after,
 .arrow_box:before {
     bottom: 100%;
@@ -820,6 +833,74 @@ header {
 
 // Product Description Custom Css Here
 .product-description {
+    .addcart-section {
+        background: #e7e3d8;
+        padding-bottom: 60px;
+        .addcart-slider {
+            .flex-control-thumbs li {
+                width: 33.33%;
+            }
+        }
+        .left-section {
+            .head-sec1 {
+                p {
+                    margin: 0;
+                }
+                .head1 {
+                    font-family: 'pop-light';
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                }
+                .head2 {
+                    color: #d4ac83;
+                    font-family: 'work-sansR';
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    font-size: 20px;
+                }
+            }
+            .head-sec2 {
+                .inblock {
+                    vertical-align: bottom;
+                }
+            }
+        }
+        .accordion-block {
+            .panel-group {
+                .panel-heading {
+                    padding: 0;
+                }
+                .head-title {
+                    padding: 10px 15px;
+                }
+                .panel-title {
+                    a {
+                        text-decoration: none;
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+                }
+                .panel {
+                    background: transparent;
+                    box-shadow: none;
+                    border: 1px solid #cf9c69;
+                    border-left: transparent;
+                    border-right: transparent;
+                    border-radius: 0;
+                }
+                .panel+.panel {
+                    margin-top: 0;
+                    border-top: 1px solid transparent;
+                }
+            }
+            .panel-default {
+                .panel-heading {
+                    background: transparent;
+                }
+            }
+        }
+    }
     .saying-slide {
         background: $base-lightcolor;
         padding: 50px 0;
@@ -830,11 +911,6 @@ header {
         }
         .flex-control-nav {
             display: none;
-        }
-        .flexslider {
-            background: transparent;
-            border: none;
-            margin: 0;
         }
         .flex-direction-nav {
             .flex-prev,

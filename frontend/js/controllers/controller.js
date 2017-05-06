@@ -9,23 +9,21 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
         //     'img/home/slide-3.jpg'
         // ];
         $scope.homeSlide = [{
-                title: 'Grooming Essentials Tailored For Men',
-                title2: 'who want to build empires and leave legacies behind.',
-                img: 'img/home/slide-1.jpg',
-                btntxt: 'Explore Raw Nature'
-            },
-            {
-                title: 'Enrichedd With Modern Notes of rosemary, orange and cedarwood',
-                title2: 'Create looks both Messy and Constructed.',
-                img: 'img/home/slide-2.png',
-                btntxt: 'Explore Raw Nature'
-            }, {
-                title: 'Inspired by American bourbon casks,',
-                title2: 'rare isrish whiskes and erupting volcanoes.',
-                img: 'img/home/slide-3.jpg',
-                btntxt: 'Explore Raw Nature'
-            }
-        ];
+            title: 'Grooming Essentials Tailored For Men',
+            title2: 'who want to build empires and leave legacies behind.',
+            img: 'img/home/slide-1.jpg',
+            btntxt: 'Explore Raw Nature'
+        }, {
+            title: 'Enrichedd With Modern Notes of rosemary, orange and cedarwood',
+            title2: 'Create looks both Messy and Constructed.',
+            img: 'img/home/slide-2.png',
+            btntxt: 'Explore Raw Nature'
+        }, {
+            title: 'Inspired by American bourbon casks,',
+            title2: 'rare isrish whiskes and erupting volcanoes.',
+            img: 'img/home/slide-3.jpg',
+            btntxt: 'Explore Raw Nature'
+        }];
         $scope.productSlide = [{
             title: 'Beard Care',
             img: 'img/home/product-1.png',
@@ -53,26 +51,22 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
             btntxt: 'Shop Skin care'
         }];
         $scope.processSlide = [{
-                img: 'img/home/icon1.png',
-                title: 'Shop',
-                desc: 'Choose the products that you want automatically shipped.'
-            },
-            {
-                img: 'img/home/icon2.png',
-                title: 'Schedule',
-                desc: 'Choose your delivery frequency (15-60 days).No Minimum Purchase Obligation Pause, Delay &amp; Restart at will.'
-            },
-            {
-                img: 'img/home/icon3.png',
-                title: 'Save',
-                desc: 'Get a lifetime discount of 15% on all your purchase under auto-replenishment.'
-            },
-            {
-                img: 'img/home/icon4.png',
-                title: 'Ship',
-                desc: 'Sit back &amp; relax! Your favorite products will reach you automatically whn they are due.'
-            }
-        ];
+            img: 'img/home/icon1.png',
+            title: 'Shop',
+            desc: 'Choose the products that you want automatically shipped.'
+        }, {
+            img: 'img/home/icon2.png',
+            title: 'Schedule',
+            desc: 'Choose your delivery frequency (15-60 days).No Minimum Purchase Obligation Pause, Delay &amp; Restart at will.'
+        }, {
+            img: 'img/home/icon3.png',
+            title: 'Save',
+            desc: 'Get a lifetime discount of 15% on all your purchase under auto-replenishment.'
+        }, {
+            img: 'img/home/icon4.png',
+            title: 'Ship',
+            desc: 'Sit back &amp; relax! Your favorite products will reach you automatically whn they are due.'
+        }];
         $scope.myArray = _.chunk($scope.productSlide, 3);
         var abc = _.times(100, function (n) {
             return n;
@@ -93,26 +87,32 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
         $scope.navigation = NavigationService.getNavigation();
         $scope.oneAtATime = true;
         $scope.mySlides = [
-            'img/product-desc/thumb-1.png',
-            'img/product-desc/thumb-2.png',
-            'img/product-desc/thumb-1.png'
+            'img/product-desc/thumb1.png',
+            'img/product-desc/thumb2.png',
+            'img/product-desc/thumb3.png'
         ];
+        // $scope.thumbMySlides = [
+        //     'img/product-desc/thumb1.png',
+        //     'img/product-desc/thumb2.png',
+        //     'img/product-desc/thumb3.png',
+        //     'img/product-desc/thumb1.png',
+        //     'img/product-desc/thumb2.png',
+        //     'img/product-desc/thumb3.png'
+        // ];
+        // $scope.myarrayslide = _.chunk($scope.thumbMySlides, 3);
         $scope.testSlide = [{
-                // head: 'What People Are Saying?',
-                content: '"A Daily must for those whom have a daily must abed their mind. This is a planet Cleansisng, emotionally rebranding hot scotch and thumpon needs to give one a nose on ones frined and contemporaries"',
-                name: 'Praveen Kumar | Athelete'
-            },
-            {
-                head: 'What People Are Saying?',
-                content: '"A Daily must for those whom have a daily must abed their mind. This is a planet Cleansisng, emotionally rebranding hot scotch and thumpon needs to give one a nose on ones frined and contemporaries"',
-                name: 'Praveen Kumar | Athelete'
-            },
-            {
-                // head: 'What People Are Saying?',
-                content: '"A Daily must for those whom have a daily must abed their mind. This is a planet Cleansisng, emotionally rebranding hot scotch and thumpon needs to give one a nose on ones frined and contemporaries"',
-                name: 'Praveen Kumar | Athelete'
-            }
-        ];
+            // head: 'What People Are Saying?',
+            content: '"A Daily must for those whom have a daily must abed their mind. This is a planet Cleansisng, emotionally rebranding hot scotch and thumpon needs to give one a nose on ones frined and contemporaries"',
+            name: 'Praveen Kumar | Athelete'
+        }, {
+            head: 'What People Are Saying?',
+            content: '"A Daily must for those whom have a daily must abed their mind. This is a planet Cleansisng, emotionally rebranding hot scotch and thumpon needs to give one a nose on ones frined and contemporaries"',
+            name: 'Praveen Kumar | Athelete'
+        }, {
+            // head: 'What People Are Saying?',
+            content: '"A Daily must for those whom have a daily must abed their mind. This is a planet Cleansisng, emotionally rebranding hot scotch and thumpon needs to give one a nose on ones frined and contemporaries"',
+            name: 'Praveen Kumar | Athelete'
+        }];
         $scope.productSlide = [{
             img: 'img/product-desc/category1.jpg',
             name: 'Beard Oil',
@@ -139,9 +139,9 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
 
     })
 
-    //Example API Controller
-    .controller('DemoAPICtrl', function ($scope, TemplateService, apiService, NavigationService, $timeout) {
-        apiService.getDemo($scope.formData, function (data) {
-            console.log(data);
-        });
+//Example API Controller
+.controller('DemoAPICtrl', function ($scope, TemplateService, apiService, NavigationService, $timeout) {
+    apiService.getDemo($scope.formData, function (data) {
+        console.log(data);
     });
+});

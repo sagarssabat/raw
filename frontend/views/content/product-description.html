@@ -1,123 +1,117 @@
 <div class="product-description">
-    <section>
+    <section class="addcart-section">
         <div class="container">
             <div class="banner">
-                <ol class="breadcrumb">
+                <ol class="breadcrumb custom-crumb">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Shower</a></li>
                     <li class="active"><a href="#">Body Wash | Gold Glay and Tonka Bean Oil</a></li>
                 </ol>
             </div>
-        </div>
-    </section>
-    <section class="hide">
-        <div class="container">
             <div class="row">
                 <div class="col-md-5">
-                    <flex-slider flex-slide="s in mySlides track by $index" prev-text="" next-text="" control-nav="thumbnails">
+                    <flex-slider class="addcart-slider" flex-slide="s in myarrayslide track by $index" prev-text="" next-text="" control-nav="thumbnails">
                         <li data-thumb="{{s}}">
                             <img ng-src="{{s}}" class="img-full img-responsive">
                         </li>
                     </flex-slider>
                 </div>
                 <div class="col-md-7">
-                    <div class="div">
-                        <p>Shower</p>
-                        <p>Body Wash</p>
-                    </div>
-                    <div class="accordion-block">
+                    <div class="left-section">
+                        <div class="head-sec1">
+                            <p class="head1">Shower</p>
+                            <p class="head2">Body Wash</p>
+                        </div>
+                        <div class="accordion-block">
+                            <h2 class="head3">Gold Clay and Tonka Bean Oil</h2>
+                            <uib-accordion>
+                                <div uib-accordion-group class="hidebordercolor panel-default " is-open="status.open1">
+                                    <uib-accordion-heading>
+                                        <div class="char hidden-xs" ng-class="{'active': status.open1, '': !status.open1}">
+                                            <h4 class="panel-title head-title">The Blend
+                                                <i class="pull-right fa " ng-class="{'fa fa-minus': status.open1, 'fa fa-plus': !status.open1}"></i>
+                                            </h4>
+                                        </div>
+                                    </uib-accordion-heading>
+                                    <div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias doloremque atque
+                                            aliquam sunt doloribus sequi, totam magnam explicabo sint. Mollitia blanditiis
+                                            repellat nihil voluptate ipsam et, doloremque dignissimos. Quo, sapiente.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div uib-accordion-group class="hidebordercolor panel-default " is-open="status.open2">
+                                    <uib-accordion-heading>
+                                        <div class="char hidden-xs" ng-class="{'active': status.open2, '': !status.open2}">
+                                            <h4 class="panel-title head-title">Directions
+                                                <i class="pull-right fa " ng-class="{'fa fa-minus': status.open2, 'fa fa-plus': !status.open2}"></i>
+                                            </h4>
+                                        </div>
+                                    </uib-accordion-heading>
+                                    <div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias doloremque atque
+                                            aliquam sunt doloribus sequi, totam magnam explicabo sint. Mollitia blanditiis
+                                            repellat nihil voluptate ipsam et, doloremque dignissimos. Quo, sapiente.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div uib-accordion-group class="hidebordercolor panel-default " is-open="status.open3">
+                                    <uib-accordion-heading>
+                                        <div class="char hidden-xs" ng-class="{'active': status.open3, '': !status.open3}">
+                                            <h4 class="panel-title head-title">What's in it?
+                                                <i class="pull-right fa " ng-class="{'fa fa-minus': status.open3, 'fa fa-plus': !status.open3}"></i>
+                                            </h4>
+                                        </div>
+                                    </uib-accordion-heading>
+                                    <div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias doloremque atque
+                                            aliquam sunt doloribus sequi, totam magnam explicabo sint. Mollitia blanditiis
+                                            repellat nihil voluptate ipsam et, doloremque dignissimos. Quo, sapiente.
+                                        </p>
+                                    </div>
+                                </div>
+                            </uib-accordion>
+                        </div>
+                        <div class="head-sec2">
+                            <p class="inblock">Rs. 699</p>
+                            <p class="inblock">(250 ml) | This product is worth 50 loyalty points</p>
+                        </div>
                         <div>
-                            <h1>Gold Clay and Tonka Bean Oil</h1>
-                        </div>
-                        <uib-accordion>
-                            <div uib-accordion-group class="hidebordercolor panel-default " is-open="status.open1">
-                                <uib-accordion-heading>
-                                    <div class="char hidden-xs" ng-class="{'active': status.open1, '': !status.open1}">
-
-                                        <h4 class="panel-title head-title">The Blend
-                                            <i class="pull-right fa " ng-class="{'fa fa-minus': status.open1, 'fa fa-plus': !status.open1}"></i>
-                                        </h4>
-                                    </div>
-
-                                </uib-accordion-heading>
-                                <div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias doloremque atque
-                                        aliquam sunt doloribus sequi, totam magnam explicabo sint. Mollitia blanditiis repellat
-                                        nihil voluptate ipsam et, doloremque dignissimos. Quo, sapiente.
-                                    </p>
+                            <form class="inblock">
+                                <div class="input-group">
+                                    <span class="input-group-addon btn btn-default" id="basic-addon1">-</span>
+                                    <input type="text" value="1" class="form-control">
+                                    <span class="input-group-addon btn btn-default" id="basic-addon1">+</span>
                                 </div>
-                            </div>
-                            <div uib-accordion-group class="hidebordercolor panel-default " is-open="status.open2">
-                                <uib-accordion-heading>
-                                    <div class="char hidden-xs" ng-class="{'active': status.open2, '': !status.open2}">
-                                        <h4 class="panel-title head-title">Directions
-                                            <i class="pull-right fa " ng-class="{'fa fa-minus': status.open2, 'fa fa-plus': !status.open2}"></i>
-                                        </h4>
-                                    </div>
-                                </uib-accordion-heading>
-                                <div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias doloremque atque
-                                        aliquam sunt doloribus sequi, totam magnam explicabo sint. Mollitia blanditiis repellat
-                                        nihil voluptate ipsam et, doloremque dignissimos. Quo, sapiente.
-                                    </p>
-                                </div>
-                            </div>
-                            <div uib-accordion-group class="hidebordercolor panel-default " is-open="status.open3">
-                                <uib-accordion-heading>
-                                    <div class="char hidden-xs" ng-class="{'active': status.open3, '': !status.open3}">
-                                        <h4 class="panel-title head-title">What's in it?
-                                            <i class="pull-right fa " ng-class="{'fa fa-minus': status.open3, 'fa fa-plus': !status.open3}"></i>
-                                        </h4>
-                                    </div>
-                                </uib-accordion-heading>
-                                <div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias doloremque atque
-                                        aliquam sunt doloribus sequi, totam magnam explicabo sint. Mollitia blanditiis repellat
-                                        nihil voluptate ipsam et, doloremque dignissimos. Quo, sapiente.
-                                    </p>
-                                </div>
-                            </div>
-                        </uib-accordion>
-                    </div>
-                    <div>
-                        <p>Rs. 699</p>
-                        <p>(250 ml) | This product is worth 50 loyalty points</p>
-                    </div>
-                    <div>
-                        <form class="inblock">
-                            <div class="input-group">
-                                <span class="input-group-addon btn btn-default" id="basic-addon1">-</span>
-                                <input type="text" value="1" class="form-control">
-                                <span class="input-group-addon btn btn-default" id="basic-addon1">+</span>
-                            </div>
-                        </form>
-                        <button class="btn btn-default inblock btn--custom">Add to Cart</button>
-                    </div>
-                    <div>
-                        <div class="checkbox inblock">
-                            <label><input type="checkbox" value="">Auto Replenish in </label>
+                            </form>
+                            <button class="btn btn-default inblock btn--custom">Add to Cart</button>
                         </div>
-                        <div class="inblock">
-                            <label><input type="text" value=""> Days</label>
+                        <div>
+                            <div class="checkbox inblock">
+                                <label><input type="checkbox" value="">Auto Replenish in </label>
+                            </div>
+                            <div class="inblock">
+                                <label><input type="text" value=""> Days</label>
+                            </div>
+                            <p>If used as indicated, this bottle will last 30 days.</p>
                         </div>
-                        <p>If used as indicated, this bottle will last 30 days.</p>
-                    </div>
-                    <div class="social-icons">
-                        <div class="inblock">
-                            <ul class="list-unstyled list-inline inblock sec-content">
-                                <li>
-                                    <a href=""><img src="img/home/Facebook-Icon@4x.png" alt="" class="img-responsive icons"></a>
-                                </li>
-                                <li>
-                                    <a href=""><img src="img/home/Twitter-Icon@4x.png" alt="" class="img-responsive icons"></a>
-                                </li>
-                                <li>
-                                    <a href=""><img src="img/home/Instagram-Icon@4x.png" alt="" class="img-responsive icons"></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="inblock">
-                            <a href="">Share this product</a>
+                        <div class="social-icons">
+                            <div class="inblock">
+                                <ul class="list-unstyled list-inline inblock sec-content">
+                                    <li>
+                                        <a href=""><img src="img/home/Facebook-Icon@4x.png" alt="" class="img-responsive icons"></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><img src="img/home/Twitter-Icon@4x.png" alt="" class="img-responsive icons"></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><img src="img/home/Instagram-Icon@4x.png" alt="" class="img-responsive icons"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="inblock">
+                                <a href="">Share this product</a>
+                            </div>
                         </div>
                     </div>
                 </div>
