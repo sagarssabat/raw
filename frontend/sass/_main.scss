@@ -1123,3 +1123,107 @@ header {
         }
     }
 }
+
+// Sign In Custom Css Here
+.sign-bgcolor {
+    background: #f9f3e5;
+    .padd80 {
+        padding: 80px 0;
+    }
+}
+
+.sign-in {
+    margin-bottom: 26px;
+    .main-head {
+        font-family: 'pop-sb';
+    }
+    .lbl-head {
+        font-family: 'work-sansR';
+        letter-spacing: 1px;
+        margin-bottom: 15px;
+    }
+    .form-control {
+        height: 50px;
+        background: transparent;
+        &:focus {
+            border: 1px solid #ccc;
+        }
+    }
+    .password-control {
+        input {
+            height: 100%;
+            border: none;
+            background: transparent;
+        }
+        input[type="password"]:focus {
+            outline: none;
+        }
+        .forgot-pass {
+            font-size: 12px;
+            font-family: 'work-sansR';
+            line-height: 3;
+            color: $dark-grey;
+        }
+    }
+    .btn--custom {
+        @include button-variant($white,
+        $dark-grey,
+        $dark-grey);
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
+
+.social-signin {
+    margin-bottom: 26px;
+    .social-head {
+        font-family: 'pop-sb';
+        text-align: center;
+        text-transform: uppercase;
+        position: relative;
+        letter-spacing: 1px;
+        &:before {
+            content: '';
+            width: 28%;
+            display: block;
+            border-top: 1px solid #282828;
+            left: 0;
+            position: absolute;
+            top: 50%;
+        }
+        &:after {
+            content: '';
+            width: 28%;
+            display: block;
+            border-top: 1px solid #282828;
+            right: 0;
+            position: absolute;
+            top: 50%;
+        }
+    }
+    .btn--custom {
+        min-height: 50px;
+        font-size: 14px;
+        padding: 10px 12px;
+        img {
+            width: 30px;
+            margin-right: 10px;
+        }
+    }
+}
+
+.create-acc {
+    .create-head {
+        text-align: center;
+        font-family: 'work-sansR'; // display: block;
+        color: $dark-grey;
+        margin: 0
+    }
+    .btn--custom {
+        @include button-variant($white,
+        $dark-grey,
+        $dark-grey);
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}

@@ -28,6 +28,11 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locat
             templateUrl: tempateURL,
             controller: 'productDescriptionCtrl'
         })
+        .state('signin', {
+            url: "/signin",
+            templateUrl: tempateURL,
+            controller: 'signInCtrl'
+        })
         .state('form', {
             url: "/form",
             templateUrl: tempateURL,

@@ -127,6 +127,11 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
             cost: 'Rs. 650'
         }]
     })
+    .controller('signInCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
+        $scope.template = TemplateService.getHTML("content/signin.html");
+        TemplateService.title = "signin"; //This is the Title of the Website
+        $scope.navigation = NavigationService.getNavigation();
+    })
     .controller('FormCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
         $scope.template = TemplateService.getHTML("content/form.html");
         TemplateService.title = "Form"; //This is the Title of the Website
