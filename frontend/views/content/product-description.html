@@ -10,9 +10,22 @@
             </div>
             <div class="row">
                 <div class="col-md-5">
-                    <flex-slider class="addcart-slider" flex-slide="s in myarrayslide track by $index" prev-text="" next-text="" control-nav="thumbnails">
+                    <!--<flex-slider class="addcart-slider" flex-slide="s in thumbMySlides track by $index" prev-text="" next-text="" control-nav="thumbnails">
                         <li data-thumb="{{s}}">
                             <img ng-src="{{s}}" class="img-full img-responsive">
+                        </li>
+                    </flex-slider>-->
+                    <flex-slider class="addcart-slider" class="" sync="#carousel" animation="slide" slider-id="slider" flex-slide="s in thumbMySlides track by $index"
+                        prev-text="" next-text="" control-nav="false">
+                        <li>
+                            <img ng-src="{{s}}" class="img-full img-responsive main-slide">
+                        </li>
+                    </flex-slider>
+                    <flex-slider class="addcart-slider" class="thumb-slide" slider-id="carousel" as-nav-for="#slider" item-width="150" item-margin="20"
+                        animation="slide" flex-slide="s in thumbMySlides track by $index" min-items="3" prev-text="" next-text=""
+                        control-nav="false">
+                        <li>
+                            <img ng-src="{{s}}" class="img-full img-responsive thumb-border">
                         </li>
                     </flex-slider>
                 </div>
@@ -76,41 +89,51 @@
                             <p class="inblock">Rs. 699</p>
                             <p class="inblock">(250 ml) | This product is worth 50 loyalty points</p>
                         </div>
-                        <div>
-                            <form class="inblock">
+                        <div class="head-sec3">
+                            <form class="cell1">
                                 <div class="input-group">
                                     <span class="input-group-addon btn btn-default" id="basic-addon1">-</span>
                                     <input type="text" value="1" class="form-control">
                                     <span class="input-group-addon btn btn-default" id="basic-addon1">+</span>
                                 </div>
                             </form>
-                            <button class="btn btn-default inblock btn--custom">Add to Cart</button>
+                            <button class="btn btn-default cell2 btn--custom">Add to Cart</button>
                         </div>
-                        <div>
-                            <div class="checkbox inblock">
-                                <label><input type="checkbox" value="">Auto Replenish in </label>
+                        <div class="head-sec4">
+                            <div class="head1">
+                                <div class="checkbox inblock chk-box">
+                                    <label><input type="checkbox" value="">Auto Replenish in </label>
+                                </div>
+                                <div class="inblock">
+                                    <form class="form-inline">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control count-days" id="text" value="30">
+                                            <label for="text" class="marg0">Days</label>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
-                            <div class="inblock">
-                                <label><input type="text" value=""> Days</label>
-                            </div>
-                            <p>If used as indicated, this bottle will last 30 days.</p>
+                            <p class="head2">If used as indicated, this bottle will last 30 days.</p>
                         </div>
-                        <div class="social-icons">
+                        <div class="social-icons head-sec5">
                             <div class="inblock">
-                                <ul class="list-unstyled list-inline inblock sec-content">
+                                <ul class="list-unstyled list-inline inblock sec-content ">
                                     <li>
-                                        <a href=""><img src="img/home/Facebook-Icon@4x.png" alt="" class="img-responsive icons"></a>
+                                        <a href=" "><img src="img/home/Twitter-Icon@4x.png " alt=" " class="img-responsive
+                                            icons "></a>
                                     </li>
                                     <li>
-                                        <a href=""><img src="img/home/Twitter-Icon@4x.png" alt="" class="img-responsive icons"></a>
+                                        <a href=" "><img src="img/home/Facebook-Icon@4x.png " alt=" " class="img-responsive
+                                            icons "></a>
                                     </li>
                                     <li>
-                                        <a href=""><img src="img/home/Instagram-Icon@4x.png" alt="" class="img-responsive icons"></a>
+                                        <a href=" "><img src="img/home/Instagram-Icon@4x.png " alt=" " class="img-responsive
+                                            icons "></a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="inblock">
-                                <a href="">Share this product</a>
+                                <a href=" " class="text-upper">Share this product</a>
                             </div>
                         </div>
                     </div>
@@ -118,77 +141,78 @@
             </div>
         </div>
     </section>
-    <section class="saying-slide">
-        <div class="container">
-            <div class="text-center">
-                <h3 class="test-head">What People Are Saying?</h3>
+    <section class="saying-slide ">
+        <div class="container ">
+            <div class="text-center ">
+                <h3 class="test-head ">What People Are Saying?</h3>
                 <hr>
-                <flex-slider animation="slide" flex-slide="test in testSlide track by $index" prev-text="" next-text="">
+                <flex-slider animation="slide " flex-slide="test in testSlide track by $index " prev-text="
+                                            " next-text=" ">
                     <li>
-                        <div class="slider-content">
-                            <p class="test-content">{{test.content}}</p>
-                            <p class="test-name">{{test.name}}</p>
+                        <div class="slider-content ">
+                            <p class="test-content ">{{test.content}}</p>
+                            <p class="test-name ">{{test.name}}</p>
                         </div>
                     </li>
                 </flex-slider>
             </div>
         </div>
     </section>
-    <section class="saying-slide product-slide">
-        <div class="container">
-            <div class="product-option">
-                <h3 class="text-center test-head">You May Also Like</h3>
+    <section class="saying-slide product-slide ">
+        <div class="container ">
+            <div class="product-option ">
+                <h3 class="text-center test-head ">You May Also Like</h3>
                 <hr>
-                <div class="row">
-                    <div class="col-md-4" ng-repeat="product in productSlide">
-                        <div class="product-block">
-                            <img ng-src="{{product.img}}" alt="" class="img-responsive">
-                            <div class="text-center product-slide__block">
-                                <p class="prod-name">{{product.name}}</p>
-                                <p class="prod-cost">{{product.cost}}</p>
+                <div class="row ">
+                    <div class="col-md-4 " ng-repeat="product in productSlide ">
+                        <div class="product-block ">
+                            <img ng-src="{{product.img}} " alt=" " class="img-responsive ">
+                            <div class="text-center product-slide__block ">
+                                <p class="prod-name ">{{product.name}}</p>
+                                <p class="prod-cost ">{{product.cost}}</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="text-center">
-                    <button class="btn btn-default btn--custom">View All</button>
+                <div class="text-center ">
+                    <button class="btn btn-default btn--custom ">View All</button>
                 </div>
             </div>
         </div>
     </section>
 </div>
-<section class="sec6">
-    <div class="container-fluid padd0">
-        <div class="row marg0">
-            <div class="col-md-6 padd0">
-                <div class="sec-left">
-                    <div class="cell-table">
-                        <img src="img/home/signup.png" alt="" class="img-responsive step-img">
+<section class="sec6 ">
+    <div class="container-fluid padd0 ">
+        <div class="row marg0 ">
+            <div class="col-md-6 padd0 ">
+                <div class="sec-left ">
+                    <div class="cell-table ">
+                        <img src="img/home/signup.png " alt=" " class="img-responsive step-img ">
                         <div>
-                            <h3 class="sec-head">Step into Savings</h3>
-                            <p class="sec-content">The more you shop with us, the greater rewards you recieve. Get 2.5% cashback on your very first
+                            <h3 class="sec-head ">Step into Savings</h3>
+                            <p class="sec-content ">The more you shop with us, the greater rewards you recieve. Get 2.5% cashback on your very first
                                 purchase, and each purchase together.</p>
-                            <button class="btn btn-default btn--custom">Sign Up</button>
+                            <button class="btn btn-default btn--custom ">Sign Up</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 padd0">
-                <div class="sec-right">
-                    <div class="cell-table">
-                        <div class="row marg0">
-                            <div class="col-md-5">
+            <div class="col-md-6 padd0 ">
+                <div class="sec-right ">
+                    <div class="cell-table ">
+                        <div class="row marg0 ">
+                            <div class="col-md-5 ">
                                 <div>
-                                    <h3 class="sec-head">Gifts For Him</h3>
-                                    <p class="sec-content">Set a new benchmark with exclusive gift sets for the dapper gentleman in your life.</p>
+                                    <h3 class="sec-head ">Gifts For Him</h3>
+                                    <p class="sec-content ">Set a new benchmark with exclusive gift sets for the dapper gentleman in your life.</p>
                                     <div>
-                                        <button class="btn btn-default btn--custom">Give A Gift</button>
+                                        <button class="btn btn-default btn--custom ">Give A Gift</button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-7">
+                            <div class="col-md-7 ">
                                 <div>
-                                    <img src="img/home/gift-image-01.png" alt="" class="img-responsive">
+                                    <img src="img/home/gift-image-01.png " alt=" " class="img-responsive ">
                                 </div>
                             </div>
                         </div>

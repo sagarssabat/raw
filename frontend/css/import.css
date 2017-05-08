@@ -9277,7 +9277,14 @@ header {
 .custom-crumb {
   background-color: transparent; }
   .custom-crumb li + li:before {
-    content: "> "; }
+    content: "> ";
+    color: #282828; }
+  .custom-crumb a {
+    font-size: 12px;
+    color: #282828;
+    text-decoration: none; }
+    .custom-crumb a:hover {
+      text-decoration: none; }
 
 .flexslider {
   background: transparent;
@@ -9892,6 +9899,12 @@ header {
   padding-bottom: 60px; }
   .product-description .addcart-section .addcart-slider .flex-control-thumbs li {
     width: 33.33%; }
+  .product-description .addcart-section .addcart-slider .thumb-border {
+    border: 1px solid #d1d1c7; }
+  .product-description .addcart-section .addcart-slider .flex-direction-nav {
+    display: none; }
+  .product-description .addcart-section .addcart-slider .main-slide {
+    padding: 50px; }
   .product-description .addcart-section .left-section .head-sec1 p {
     margin: 0; }
   .product-description .addcart-section .left-section .head-sec1 .head1 {
@@ -9904,16 +9917,146 @@ header {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 20px; }
-  .product-description .addcart-section .left-section .head-sec2 .inblock {
-    vertical-align: bottom; }
+  .product-description .addcart-section .left-section .head-sec2 {
+    margin: 18px 0; }
+    .product-description .addcart-section .left-section .head-sec2 .inblock {
+      vertical-align: middle; }
+    .product-description .addcart-section .left-section .head-sec2 p {
+      font-family: 'work-sansR';
+      color: #cf9c69; }
+    .product-description .addcart-section .left-section .head-sec2 p:first-child {
+      font-family: 'pop-sb';
+      font-size: 20px;
+      color: #282828; }
+    .product-description .addcart-section .left-section .head-sec2 p:nth-child(2) {
+      margin-left: 16px; }
+  .product-description .addcart-section .left-section .head-sec3 {
+    display: table; }
+    .product-description .addcart-section .left-section .head-sec3 .cell1,
+    .product-description .addcart-section .left-section .head-sec3 .cell2 {
+      display: table-cell;
+      vertical-align: top; }
+    .product-description .addcart-section .left-section .head-sec3 .input-group {
+      border: 1px solid #282828; }
+    .product-description .addcart-section .left-section .head-sec3 .input-group-addon {
+      padding: 6px;
+      background-color: transparent;
+      border: 1px solid transparent; }
+    .product-description .addcart-section .left-section .head-sec3 .form-control {
+      padding: 0 4px;
+      background-color: transparent;
+      border: 1px solid transparent;
+      text-align: center;
+      width: 40px; }
+    .product-description .addcart-section .left-section .head-sec3 .btn--custom, .product-description .addcart-section .left-section .head-sec3 .deal-section .shop-btn, .deal-section .product-description .addcart-section .left-section .head-sec3 .shop-btn {
+      margin-left: 26px;
+      width: 180px;
+      font-family: 'pop-light';
+      color: #ffffff;
+      background-color: #282828;
+      border-color: #282828; }
+      .product-description .addcart-section .left-section .head-sec3 .btn--custom:focus, .product-description .addcart-section .left-section .head-sec3 .deal-section .shop-btn:focus, .deal-section .product-description .addcart-section .left-section .head-sec3 .shop-btn:focus, .product-description .addcart-section .left-section .head-sec3 .btn--custom.focus, .product-description .addcart-section .left-section .head-sec3 .deal-section .focus.shop-btn, .deal-section .product-description .addcart-section .left-section .head-sec3 .focus.shop-btn {
+        color: #ffffff;
+        background-color: #0f0f0f;
+        border-color: black; }
+      .product-description .addcart-section .left-section .head-sec3 .btn--custom:hover, .product-description .addcart-section .left-section .head-sec3 .deal-section .shop-btn:hover, .deal-section .product-description .addcart-section .left-section .head-sec3 .shop-btn:hover {
+        color: #ffffff;
+        background-color: #0f0f0f;
+        border-color: #090909; }
+      .product-description .addcart-section .left-section .head-sec3 .btn--custom:active, .product-description .addcart-section .left-section .head-sec3 .deal-section .shop-btn:active, .deal-section .product-description .addcart-section .left-section .head-sec3 .shop-btn:active, .product-description .addcart-section .left-section .head-sec3 .btn--custom.active, .product-description .addcart-section .left-section .head-sec3 .deal-section .active.shop-btn, .deal-section .product-description .addcart-section .left-section .head-sec3 .active.shop-btn,
+      .open > .product-description .addcart-section .left-section .head-sec3 .btn--custom.dropdown-toggle,
+      .open > .product-description .addcart-section .left-section .head-sec3 .deal-section .dropdown-toggle.shop-btn, .deal-section
+      .open > .product-description .addcart-section .left-section .head-sec3 .dropdown-toggle.shop-btn {
+        color: #ffffff;
+        background-color: #0f0f0f;
+        border-color: #090909; }
+        .product-description .addcart-section .left-section .head-sec3 .btn--custom:active:hover, .product-description .addcart-section .left-section .head-sec3 .deal-section .shop-btn:active:hover, .deal-section .product-description .addcart-section .left-section .head-sec3 .shop-btn:active:hover, .product-description .addcart-section .left-section .head-sec3 .btn--custom:active:focus, .product-description .addcart-section .left-section .head-sec3 .deal-section .shop-btn:active:focus, .deal-section .product-description .addcart-section .left-section .head-sec3 .shop-btn:active:focus, .product-description .addcart-section .left-section .head-sec3 .btn--custom:active.focus, .product-description .addcart-section .left-section .head-sec3 .deal-section .shop-btn:active.focus, .deal-section .product-description .addcart-section .left-section .head-sec3 .shop-btn:active.focus, .product-description .addcart-section .left-section .head-sec3 .btn--custom.active:hover, .product-description .addcart-section .left-section .head-sec3 .deal-section .active.shop-btn:hover, .deal-section .product-description .addcart-section .left-section .head-sec3 .active.shop-btn:hover, .product-description .addcart-section .left-section .head-sec3 .btn--custom.active:focus, .product-description .addcart-section .left-section .head-sec3 .deal-section .active.shop-btn:focus, .deal-section .product-description .addcart-section .left-section .head-sec3 .active.shop-btn:focus, .product-description .addcart-section .left-section .head-sec3 .btn--custom.active.focus, .product-description .addcart-section .left-section .head-sec3 .deal-section .active.focus.shop-btn, .deal-section .product-description .addcart-section .left-section .head-sec3 .active.focus.shop-btn,
+        .open > .product-description .addcart-section .left-section .head-sec3 .btn--custom.dropdown-toggle:hover,
+        .open > .product-description .addcart-section .left-section .head-sec3 .deal-section .dropdown-toggle.shop-btn:hover, .deal-section
+        .open > .product-description .addcart-section .left-section .head-sec3 .dropdown-toggle.shop-btn:hover,
+        .open > .product-description .addcart-section .left-section .head-sec3 .btn--custom.dropdown-toggle:focus,
+        .open > .product-description .addcart-section .left-section .head-sec3 .deal-section .dropdown-toggle.shop-btn:focus, .deal-section
+        .open > .product-description .addcart-section .left-section .head-sec3 .dropdown-toggle.shop-btn:focus,
+        .open > .product-description .addcart-section .left-section .head-sec3 .btn--custom.dropdown-toggle.focus,
+        .open > .product-description .addcart-section .left-section .head-sec3 .deal-section .dropdown-toggle.focus.shop-btn, .deal-section
+        .open > .product-description .addcart-section .left-section .head-sec3 .dropdown-toggle.focus.shop-btn {
+          color: #ffffff;
+          background-color: black;
+          border-color: black; }
+      .product-description .addcart-section .left-section .head-sec3 .btn--custom:active, .product-description .addcart-section .left-section .head-sec3 .deal-section .shop-btn:active, .deal-section .product-description .addcart-section .left-section .head-sec3 .shop-btn:active, .product-description .addcart-section .left-section .head-sec3 .btn--custom.active, .product-description .addcart-section .left-section .head-sec3 .deal-section .active.shop-btn, .deal-section .product-description .addcart-section .left-section .head-sec3 .active.shop-btn,
+      .open > .product-description .addcart-section .left-section .head-sec3 .btn--custom.dropdown-toggle,
+      .open > .product-description .addcart-section .left-section .head-sec3 .deal-section .dropdown-toggle.shop-btn, .deal-section
+      .open > .product-description .addcart-section .left-section .head-sec3 .dropdown-toggle.shop-btn {
+        background-image: none; }
+      .product-description .addcart-section .left-section .head-sec3 .btn--custom.disabled:hover, .product-description .addcart-section .left-section .head-sec3 .deal-section .disabled.shop-btn:hover, .deal-section .product-description .addcart-section .left-section .head-sec3 .disabled.shop-btn:hover, .product-description .addcart-section .left-section .head-sec3 .btn--custom.disabled:focus, .product-description .addcart-section .left-section .head-sec3 .deal-section .disabled.shop-btn:focus, .deal-section .product-description .addcart-section .left-section .head-sec3 .disabled.shop-btn:focus, .product-description .addcart-section .left-section .head-sec3 .btn--custom.disabled.focus, .product-description .addcart-section .left-section .head-sec3 .deal-section .disabled.focus.shop-btn, .deal-section .product-description .addcart-section .left-section .head-sec3 .disabled.focus.shop-btn, .product-description .addcart-section .left-section .head-sec3 .btn--custom[disabled]:hover, .product-description .addcart-section .left-section .head-sec3 .deal-section [disabled].shop-btn:hover, .deal-section .product-description .addcart-section .left-section .head-sec3 [disabled].shop-btn:hover, .product-description .addcart-section .left-section .head-sec3 .btn--custom[disabled]:focus, .product-description .addcart-section .left-section .head-sec3 .deal-section [disabled].shop-btn:focus, .deal-section .product-description .addcart-section .left-section .head-sec3 [disabled].shop-btn:focus, .product-description .addcart-section .left-section .head-sec3 .btn--custom[disabled].focus, .product-description .addcart-section .left-section .head-sec3 .deal-section [disabled].focus.shop-btn, .deal-section .product-description .addcart-section .left-section .head-sec3 [disabled].focus.shop-btn,
+      fieldset[disabled] .product-description .addcart-section .left-section .head-sec3 .btn--custom:hover,
+      fieldset[disabled] .product-description .addcart-section .left-section .head-sec3 .deal-section .shop-btn:hover, .deal-section
+      fieldset[disabled] .product-description .addcart-section .left-section .head-sec3 .shop-btn:hover,
+      fieldset[disabled] .product-description .addcart-section .left-section .head-sec3 .btn--custom:focus,
+      fieldset[disabled] .product-description .addcart-section .left-section .head-sec3 .deal-section .shop-btn:focus, .deal-section
+      fieldset[disabled] .product-description .addcart-section .left-section .head-sec3 .shop-btn:focus,
+      fieldset[disabled] .product-description .addcart-section .left-section .head-sec3 .btn--custom.focus,
+      fieldset[disabled] .product-description .addcart-section .left-section .head-sec3 .deal-section .focus.shop-btn, .deal-section
+      fieldset[disabled] .product-description .addcart-section .left-section .head-sec3 .focus.shop-btn {
+        background-color: #282828;
+        border-color: #282828; }
+      .product-description .addcart-section .left-section .head-sec3 .btn--custom .badge, .product-description .addcart-section .left-section .head-sec3 .deal-section .shop-btn .badge, .deal-section .product-description .addcart-section .left-section .head-sec3 .shop-btn .badge {
+        color: #282828;
+        background-color: #ffffff; }
+  .product-description .addcart-section .left-section .head-sec4 {
+    margin: 20px 0; }
+    .product-description .addcart-section .left-section .head-sec4 label {
+      text-transform: uppercase;
+      letter-spacing: 1px; }
+    .product-description .addcart-section .left-section .head-sec4 .chk-box {
+      margin: 0; }
+    .product-description .addcart-section .left-section .head-sec4 .inblock {
+      vertical-align: bottom; }
+      .product-description .addcart-section .left-section .head-sec4 .inblock .form-group .form-control {
+        width: 16%;
+        text-align: center;
+        padding: 0 6px;
+        height: auto;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid; }
+      .product-description .addcart-section .left-section .head-sec4 .inblock .form-group label {
+        vertical-align: bottom; }
+    .product-description .addcart-section .left-section .head-sec4 .head1 {
+      margin-bottom: 10px;
+      font-family: 'work-sansSB'; }
+    .product-description .addcart-section .left-section .head-sec4 .head2 {
+      font-family: 'work-sansR'; }
+  .product-description .addcart-section .left-section .head-sec5 {
+    margin-top: 18px; }
+    .product-description .addcart-section .left-section .head-sec5 .inblock {
+      vertical-align: middle; }
+    .product-description .addcart-section .left-section .head-sec5 .sec-content {
+      margin: 0; }
+      .product-description .addcart-section .left-section .head-sec5 .sec-content li > a img {
+        width: 26px; }
+      .product-description .addcart-section .left-section .head-sec5 .sec-content li + li {
+        padding-left: 20px; }
+    .product-description .addcart-section .left-section .head-sec5 .text-upper {
+      text-transform: uppercase;
+      color: #282828;
+      font-family: 'pop-sb';
+      margin-left: 30px;
+      text-decoration: underline; }
   .product-description .addcart-section .accordion-block .panel-group .panel-heading {
     padding: 0; }
   .product-description .addcart-section .accordion-block .panel-group .head-title {
-    padding: 10px 15px; }
+    padding: 12px 15px 12px 0;
+    font-family: 'pop-sb';
+    text-transform: uppercase;
+    font-size: 12px; }
   .product-description .addcart-section .accordion-block .panel-group .panel-title a {
     text-decoration: none; }
     .product-description .addcart-section .accordion-block .panel-group .panel-title a:hover {
       text-decoration: none; }
+  .product-description .addcart-section .accordion-block .panel-group .panel-body {
+    padding-left: 0;
+    padding-top: 5px; }
   .product-description .addcart-section .accordion-block .panel-group .panel {
     background: transparent;
     box-shadow: none;

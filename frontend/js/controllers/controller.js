@@ -91,14 +91,14 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
             'img/product-desc/thumb2.png',
             'img/product-desc/thumb3.png'
         ];
-        // $scope.thumbMySlides = [
-        //     'img/product-desc/thumb1.png',
-        //     'img/product-desc/thumb2.png',
-        //     'img/product-desc/thumb3.png',
-        //     'img/product-desc/thumb1.png',
-        //     'img/product-desc/thumb2.png',
-        //     'img/product-desc/thumb3.png'
-        // ];
+        $scope.thumbMySlides = [
+            'img/product-desc/thumb1.png',
+            'img/product-desc/thumb2.png',
+            'img/product-desc/thumb3.png',
+            'img/product-desc/thumb1.png',
+            'img/product-desc/thumb2.png',
+            'img/product-desc/thumb3.png'
+        ];
         // $scope.myarrayslide = _.chunk($scope.thumbMySlides, 3);
         $scope.testSlide = [{
             // head: 'What People Are Saying?',
@@ -139,9 +139,9 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
 
     })
 
-//Example API Controller
-.controller('DemoAPICtrl', function ($scope, TemplateService, apiService, NavigationService, $timeout) {
-    apiService.getDemo($scope.formData, function (data) {
-        console.log(data);
+    //Example API Controller
+    .controller('DemoAPICtrl', function ($scope, TemplateService, apiService, NavigationService, $timeout) {
+        apiService.getDemo($scope.formData, function (data) {
+            console.log(data);
+        });
     });
-});

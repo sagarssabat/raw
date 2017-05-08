@@ -204,6 +204,15 @@ header {
     background-color: transparent;
     li+li:before {
         content: "> ";
+        color: $dark-grey;
+    }
+    a {
+        font-size: 12px;
+        color: $dark-grey;
+        text-decoration: none;
+        &:hover {
+            text-decoration: none;
+        }
     }
 }
 
@@ -840,6 +849,20 @@ header {
             .flex-control-thumbs li {
                 width: 33.33%;
             }
+            .thumb-border {
+                border: 1px solid #d1d1c7;
+            }
+            .thumb-slide {
+                li {
+                    // padding: 10px;
+                }
+            }
+            .flex-direction-nav {
+                display: none;
+            }
+            .main-slide {
+                padding: 50px;
+            }
         }
         .left-section {
             .head-sec1 {
@@ -860,8 +883,110 @@ header {
                 }
             }
             .head-sec2 {
+                margin: 18px 0;
+                .inblock {
+                    vertical-align: middle;
+                }
+                p {
+                    font-family: 'work-sansR';
+                    color: #cf9c69
+                }
+                p:first-child {
+                    font-family: 'pop-sb';
+                    font-size: 20px;
+                    color: $dark-grey;
+                }
+                p:nth-child(2) {
+                    margin-left: 16px;
+                }
+            }
+            .head-sec3 {
+                display: table;
+                .cell1,
+                .cell2 {
+                    display: table-cell;
+                    vertical-align: top;
+                }
+                .input-group {
+                    border: 1px solid $dark-grey;
+                }
+                .input-group-addon {
+                    padding: 6px;
+                    background-color: transparent;
+                    border: 1px solid transparent;
+                }
+                .form-control {
+                    padding: 0 4px;
+                    background-color: transparent;
+                    border: 1px solid transparent;
+                    text-align: center;
+                    width: 40px;
+                }
+                .btn--custom {
+                    margin-left: 26px;
+                    width: 180px;
+                    font-family: 'pop-light';
+                    @include button-variant($white,
+                    $dark-grey,
+                    $dark-grey);
+                }
+            }
+            .head-sec4 {
+                margin: 20px 0;
+                label {
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                }
+                .chk-box {
+                    margin: 0;
+                }
                 .inblock {
                     vertical-align: bottom;
+                    .form-group {
+                        .form-control {
+                            width: 16%;
+                            text-align: center;
+                            padding: 0 6px;
+                            height: auto;
+                            background-color: transparent;
+                            border: none;
+                            border-bottom: 1px solid
+                        }
+                        label {
+                            vertical-align: bottom;
+                        }
+                    }
+                }
+                .head1 {
+                    margin-bottom: 10px;
+                    font-family: 'work-sansSB';
+                }
+                .head2 {
+                    font-family: 'work-sansR';
+                }
+            }
+            .head-sec5 {
+                margin-top: 18px;
+                .inblock {
+                    vertical-align: middle;
+                }
+                .sec-content {
+                    margin: 0;
+                    li>a {
+                        img {
+                            width: 26px;
+                        }
+                    }
+                    li+li {
+                        padding-left: 20px;
+                    }
+                }
+                .text-upper {
+                    text-transform: uppercase;
+                    color: $dark-grey;
+                    font-family: 'pop-sb';
+                    margin-left: 30px;
+                    text-decoration: underline;
                 }
             }
         }
@@ -871,7 +996,10 @@ header {
                     padding: 0;
                 }
                 .head-title {
-                    padding: 10px 15px;
+                    padding: 12px 15px 12px 0;
+                    font-family: 'pop-sb';
+                    text-transform: uppercase;
+                    font-size: 12px;
                 }
                 .panel-title {
                     a {
@@ -880,6 +1008,10 @@ header {
                             text-decoration: none;
                         }
                     }
+                }
+                .panel-body {
+                    padding-left: 0;
+                    padding-top: 5px;
                 }
                 .panel {
                     background: transparent;
