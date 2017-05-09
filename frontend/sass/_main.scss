@@ -208,6 +208,13 @@ header {
     position: relative;
 }
 
+.test-head {
+    font-family: 'pop-md';
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
 // custom checkbox sass here
 .custom-checkbox {
     [type="checkbox"]:not(:checked)+label:before,
@@ -760,12 +767,6 @@ header {
                 transform: translate(0, -50%);
             }
         }
-        .product-block__text {
-            p {
-                margin: 14px 0 20px;
-                font-family: 'work-sansR';
-            }
-        }
     }
 }
 
@@ -1139,13 +1140,12 @@ header {
                     background-position: center center;
                 }
             }
-        }
-        .test-head {
-            font-family: 'pop-md';
-            text-transform: uppercase;
-            font-size: 20px;
-            letter-spacing: 1px;
-        }
+        } // .test-head {
+        //     font-family: 'pop-md';
+        //     text-transform: uppercase;
+        //     font-size: 20px;
+        //     letter-spacing: 1px;
+        // }
         .slider-content {
             padding: 0 100px;
             margin-top: 20px;
@@ -1350,5 +1350,51 @@ header {
     }
     input[type="number"]::-webkit-inner-spin-button {
         display: none;
+    }
+}
+
+// Product Listing Css Here
+.product-listing {
+    .bg-grey {
+        background: #ececec;
+        hr {
+            width: 160px;
+            margin: 0 auto;
+            border-top: 1px solid $dark-grey;
+        }
+    }
+    .ticket {
+        position: absolute;
+        background: $base-darkcolor;
+        width: 28%;
+        top: 5%;
+        font-family: 'pop-sb';
+        color: #fff;
+        padding: 6px 12px;
+        text-transform: uppercase;
+        text-align: left;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: -20px;
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            border-top: 32px solid $base-darkcolor;
+        }
+    }
+    .product-block__text {
+        p {
+            margin: 0 !important;
+        }
+        .product-name {
+            margin-top: 14px;
+            color: $base-darkcolor;
+            font-family: 'work-sansSB' !important;
+        }
+        .product-head {
+            color: $dark-grey;
+            font-family: 'pop-sb' !important;
+        }
     }
 }

@@ -1,0 +1,109 @@
+<div class="product-listing">
+    <section>
+        <div class="banner relate">
+            <flex-slider flex-slide="s in productList track by $index" prev-text="" next-text="">
+                <li>
+                    <!--<div class="slider">
+                    <h4 class="slider__head">{{s.title}}</h4>
+                    <p class="slider__title">{{s.title2}}</p>
+                </div>-->
+                    <img ng-src="{{s}}" class="img-full">
+                    <!--<div class="slider__btn">
+                    <button class="btn btn-default btn--custom">{{s.btntxt}}</button>
+                </div>-->
+                </li>
+            </flex-slider>
+        </div>
+    </section>
+    <section class="sec4 bg-grey">
+        <div class="container">
+            <div class="product-list">
+                <ul class="list-unstyled list list-inline">
+                    <li ng-repeat="product in cartSlide">
+                        <div class="product-block relate">
+                            <!--<h3 class="product-block__head">{{product.title}}</h3>-->
+                            <p class="ticket">10% Off</p>
+                            <a href=" ">
+                                <img ng-src="{{product.img}}" alt=" " class="img-responsive ">
+                            </a>
+                            <div class="product-block__text">
+                                <p class="product-name">{{product.desc}}</p>
+                                <h4 class="product-head">{{product.head}}</h4>
+                                <button class="btn btn-default btn--custom">{{product.btntxt}}</button>
+                                <div>
+                                    <p class="inblock">Rs.650</p>
+                                    <p class="inblock">Rs.500</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="sec4 bg-grey">
+        <div class="container">
+            <div class="">
+                <h3 class="test-head text-center">View Other Categories</h3>
+                <hr>
+                <div class="product-list">
+                    <ul class="list-unstyled list list-inline">
+                        <li ng-repeat="product in cartSlide">
+                            <div class="product-block">
+                                <h3 class="product-block__head">{{product.title}}</h3>
+                                <a href=" ">
+                                    <img ng-src="{{product.img}}" alt=" " class="img-responsive ">
+                                </a>
+                                <div class="product-block__text">
+                                    <p>{{product.desc}}</p>
+                                    <button class="btn btn-default btn--custom">{{product.btntxt}}</button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec6">
+        <div class="container-fluid padd0">
+            <div class="row marg0">
+                <div class="col-md-6 padd0">
+                    <div class="sec-left">
+                        <div class="cell-table">
+                            <img src="img/home/signup.png" alt="" class="img-responsive step-img">
+                            <div>
+                                <h3 class="sec-head">Step into Savings</h3>
+                                <p class="sec-content">The more you shop with us, the greater rewards you recieve. Get 2.5% cashback on your very
+                                    first purchase, and each purchase together.</p>
+                                <button class="btn btn-default btn--custom">Sign Up</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 padd0">
+                    <div class="sec-right">
+                        <div class="cell-table">
+                            <div class="row marg0">
+                                <div class="col-md-5">
+                                    <div>
+                                        <h3 class="sec-head">Gifts For Him</h3>
+                                        <p class="sec-content">Set a new benchmark with exclusive gift sets for the dapper gentleman in your life.</p>
+                                        <div>
+                                            <button class="btn btn-default btn--custom">Give A Gift</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <div>
+                                        <img src="img/home/gift-image-01.png" alt="" class="img-responsive">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

@@ -9280,6 +9280,12 @@ header {
 .arrow_box {
   position: relative; }
 
+.test-head {
+  font-family: 'pop-md';
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 1px; }
+
 .custom-checkbox {
   /* disabled checkbox */
   /* hover style just for information */ }
@@ -9792,9 +9798,6 @@ header {
         top: 9px;
         -webkit-transform: translate(0, -50%);
                 transform: translate(0, -50%); }
-    .sec4 .product-block .product-block__text p {
-      margin: 14px 0 20px;
-      font-family: 'work-sansR'; }
 
 .sec5 {
   background: #F4E9CB;
@@ -10151,11 +10154,6 @@ header {
     background-size: 9px 16px;
     padding: 10px;
     background-position: center center; }
-  .product-description .saying-slide .test-head {
-    font-family: 'pop-md';
-    text-transform: uppercase;
-    font-size: 20px;
-    letter-spacing: 1px; }
   .product-description .saying-slide .slider-content {
     padding: 0 100px;
     margin-top: 20px; }
@@ -10375,7 +10373,7 @@ header {
   width: 33% !important; }
 
 .sign-up .social-head:after {
-  width: 33%; }
+  width: 33% !important; }
 
 .sign-up .mob-input {
   width: 100%; }
@@ -10412,6 +10410,44 @@ header {
 
 .sign-up input[type="number"]::-webkit-inner-spin-button {
   display: none; }
+
+.product-listing .bg-grey {
+  background: #ececec; }
+  .product-listing .bg-grey hr {
+    width: 160px;
+    margin: 0 auto;
+    border-top: 1px solid #282828; }
+
+.product-listing .ticket {
+  position: absolute;
+  background: #CE9965;
+  width: 28%;
+  top: 5%;
+  font-family: 'pop-sb';
+  color: #fff;
+  padding: 6px 12px;
+  text-transform: uppercase;
+  text-align: left; }
+  .product-listing .ticket:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -20px;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 32px solid #CE9965; }
+
+.product-listing .product-block__text p {
+  margin: 0 !important; }
+
+.product-listing .product-block__text .product-name {
+  margin-top: 14px;
+  color: #CE9965;
+  font-family: 'work-sansSB' !important; }
+
+.product-listing .product-block__text .product-head {
+  color: #282828;
+  font-family: 'pop-sb' !important; }
 
 #fancybox-loading,
 .fancybox-close,

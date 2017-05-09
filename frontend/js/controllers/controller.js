@@ -127,6 +127,56 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
             cost: 'Rs. 650'
         }]
     })
+    .controller('productListingCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
+        $scope.template = TemplateService.getHTML("content/product-listing.html");
+        TemplateService.title = "Product Listing"; //This is the Title of the Website
+        $scope.navigation = NavigationService.getNavigation();
+        $scope.productList = [
+            'img/product-list/Banner.jpg',
+            'img/product-list/Banner.jpg',
+            'img/product-list/Banner.jpg'
+        ];
+        $scope.mySlides = [
+            'img/home/slide-1.jpg',
+            'img/home/slide-2.jpg',
+            'img/home/slide-3.jpg'
+        ];
+        $scope.cartSlide = [{
+            // title: 'Beard Care',
+            img: 'img/product-list/product-1.jpg',
+            desc: 'Hair Wash - Dry Hair',
+            head: 'Gold Clay and Tonka Bean Oil',
+            btntxt: 'Shop beared Solution'
+        }, {
+            // title: 'Below The Belt',
+            img: 'img/product-list/product-2.jpg',
+            desc: 'Hair Wash - Dry Hair',
+            head: 'Gold Clay and Tonka Bean Oil',
+            btntxt: 'Shop below the belt'
+        }, {
+            // title: 'Shower Solutions',
+            img: 'img/product-list/product-3.jpg',
+            desc: 'Hair Wash - Dry Hair',
+            head: 'Gold Clay and Tonka Bean Oil',
+            btntxt: 'Shop shower Solution'
+        }];
+        $scope.productSlide = [{
+            title: 'Beard Care',
+            img: 'img/home/product-1.png',
+            desc: 'For Our Band of beared brothers.',
+            btntxt: 'Shop beared Solution'
+        }, {
+            title: 'Below The Belt',
+            img: 'img/home/product-2.png',
+            desc: 'Protect yourself from chafing,, down under.',
+            btntxt: 'Shop below the belt'
+        }, {
+            title: 'Shower Solutions',
+            img: 'img/home/product-3.png',
+            desc: 'Recover from prolonged exposure.',
+            btntxt: 'Shop shower Solution'
+        }];
+    })
     .controller('signInCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
         $scope.template = TemplateService.getHTML("content/signin.html");
         TemplateService.title = "signin"; //This is the Title of the Website
