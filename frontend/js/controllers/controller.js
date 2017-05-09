@@ -132,6 +132,11 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
         TemplateService.title = "signin"; //This is the Title of the Website
         $scope.navigation = NavigationService.getNavigation();
     })
+    .controller('signUpCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
+        $scope.template = TemplateService.getHTML("content/signup.html");
+        TemplateService.title = "signup"; //This is the Title of the Website
+        $scope.navigation = NavigationService.getNavigation();
+    })
     .controller('FormCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
         $scope.template = TemplateService.getHTML("content/form.html");
         TemplateService.title = "Form"; //This is the Title of the Website

@@ -184,6 +184,14 @@ header {
     display: inline-block;
 }
 
+.dis-table {
+    display: table;
+}
+
+.dis-tablecell {
+    display: table-cell;
+}
+
 .intable {
     display: inline-table;
 }
@@ -198,6 +206,66 @@ header {
 
 .arrow_box {
     position: relative;
+}
+
+// custom checkbox sass here
+.custom-checkbox {
+    [type="checkbox"]:not(:checked)+label:before,
+    [type="checkbox"]:checked+label:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+        width: 20px;
+        height: 20px;
+        border: 1px solid #282828;
+        background: transparent;
+    }
+    .checkbox input[type="checkbox"] {
+        opacity: 0;
+    }
+    [type="checkbox"]:not(:checked)+label:after,
+    [type="checkbox"]:checked+label:after {
+        content: '✔';
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        font-size: 15px;
+        line-height: 0.8;
+        color: $dark-grey;
+        transition: all .2s;
+    }
+    [type="checkbox"]:not(:checked)+label:after {
+        opacity: 0;
+        transform: scale(0);
+    }
+    [type="checkbox"]:checked+label:after {
+        opacity: 1;
+        transform: scale(1);
+    }
+    /* disabled checkbox */
+    [type="checkbox"]:disabled:not(:checked)+label:before,
+    [type="checkbox"]:disabled:checked+label:before {
+        box-shadow: none;
+        border-color: $dark-grey;
+        background-color: $dark-grey;
+    }
+    [type="checkbox"]:disabled:checked+label:after {
+        color: #ddd;
+    }
+    [type="checkbox"]:disabled+label {
+        color: $dark-grey;
+    }
+    /* hover style just for information */
+    label:hover:before {
+        border: 1px solid $dark-grey!important;
+    }
+    .checkbox {
+        label {
+            padding-left: 30px;
+        }
+    }
 }
 
 .custom-crumb {
@@ -1225,5 +1293,62 @@ header {
         $dark-grey);
         font-size: 14px;
         padding: 10px 20px;
+    }
+}
+
+// Sign Up Custom Css Here
+.sign-up {
+    .help-us {
+        margin: 16px 0;
+    }
+    .social-head {
+        &:before {
+            width: 33% !important;
+        }
+        &:after {
+            width: 33% !important;
+        }
+    }
+    .mob-input {
+        width: 100%;
+        .dis-tablecell {
+            &:first-child {
+                width: 16%;
+            }
+            vertical-align: middle;
+        }
+    }
+    .up-down {
+        position: relative;
+        &:after {
+            content: '';
+            background: url(../img/up-down.png);
+            /* content: url(../img/up-down.png); */
+            /* background-size: contain; */
+            padding: 12px;
+            background-size: 8px 18px;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+    .type-input {
+        .up-down {
+            text-align: left;
+            &:after {
+                float: right;
+            }
+        }
+    }
+    input[type="number"]::-webkit-input-placeholder {
+        font-family: 'work-sansR';
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+    input[type="email"]::-webkit-input-placeholder {
+        font-family: 'work-sansR';
+        letter-spacing: 1px;
+    }
+    input[type="number"]::-webkit-inner-spin-button {
+        display: none;
     }
 }

@@ -9262,6 +9262,12 @@ header {
 .inblock {
   display: inline-block; }
 
+.dis-table {
+  display: table; }
+
+.dis-tablecell {
+  display: table-cell; }
+
 .intable {
   display: inline-table; }
 
@@ -9273,6 +9279,55 @@ header {
 
 .arrow_box {
   position: relative; }
+
+.custom-checkbox {
+  /* disabled checkbox */
+  /* hover style just for information */ }
+  .custom-checkbox [type="checkbox"]:not(:checked) + label:before,
+  .custom-checkbox [type="checkbox"]:checked + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    width: 20px;
+    height: 20px;
+    border: 1px solid #282828;
+    background: transparent; }
+  .custom-checkbox .checkbox input[type="checkbox"] {
+    opacity: 0; }
+  .custom-checkbox [type="checkbox"]:not(:checked) + label:after,
+  .custom-checkbox [type="checkbox"]:checked + label:after {
+    content: '✔';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    font-size: 15px;
+    line-height: 0.8;
+    color: #282828;
+    transition: all .2s; }
+  .custom-checkbox [type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0); }
+  .custom-checkbox [type="checkbox"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  .custom-checkbox [type="checkbox"]:disabled:not(:checked) + label:before,
+  .custom-checkbox [type="checkbox"]:disabled:checked + label:before {
+    box-shadow: none;
+    border-color: #282828;
+    background-color: #282828; }
+  .custom-checkbox [type="checkbox"]:disabled:checked + label:after {
+    color: #ddd; }
+  .custom-checkbox [type="checkbox"]:disabled + label {
+    color: #282828; }
+  .custom-checkbox label:hover:before {
+    border: 1px solid #282828 !important; }
+  .custom-checkbox .checkbox label {
+    padding-left: 30px; }
 
 .custom-crumb {
   background-color: transparent; }
@@ -10312,6 +10367,51 @@ header {
   .create-acc .btn--custom .badge, .create-acc .deal-section .shop-btn .badge, .deal-section .create-acc .shop-btn .badge {
     color: #282828;
     background-color: #ffffff; }
+
+.sign-up .help-us {
+  margin: 16px 0; }
+
+.sign-up .social-head:before {
+  width: 33% !important; }
+
+.sign-up .social-head:after {
+  width: 33%; }
+
+.sign-up .mob-input {
+  width: 100%; }
+  .sign-up .mob-input .dis-tablecell {
+    vertical-align: middle; }
+    .sign-up .mob-input .dis-tablecell:first-child {
+      width: 16%; }
+
+.sign-up .up-down {
+  position: relative; }
+  .sign-up .up-down:after {
+    content: '';
+    background: url(../img/up-down.png);
+    /* content: url(../img/up-down.png); */
+    /* background-size: contain; */
+    padding: 12px;
+    background-size: 8px 18px;
+    background-position: center;
+    background-repeat: no-repeat; }
+
+.sign-up .type-input .up-down {
+  text-align: left; }
+  .sign-up .type-input .up-down:after {
+    float: right; }
+
+.sign-up input[type="number"]::-webkit-input-placeholder {
+  font-family: 'work-sansR';
+  letter-spacing: 1px;
+  text-transform: uppercase; }
+
+.sign-up input[type="email"]::-webkit-input-placeholder {
+  font-family: 'work-sansR';
+  letter-spacing: 1px; }
+
+.sign-up input[type="number"]::-webkit-inner-spin-button {
+  display: none; }
 
 #fancybox-loading,
 .fancybox-close,
