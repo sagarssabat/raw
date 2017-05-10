@@ -1,6 +1,6 @@
 <div class="product-description">
     <section class="addcart-section">
-        <div class="container">
+        <div class="container paddLR">
             <div class="banner">
                 <ol class="breadcrumb custom-crumb">
                     <li><a href="#">Home</a></li>
@@ -21,7 +21,7 @@
                             <img ng-src="{{s}}" class="img-full img-responsive main-slide">
                         </li>
                     </flex-slider>
-                    <flex-slider class="addcart-slider" class="thumb-slide" slider-id="carousel" as-nav-for="#slider" item-width="150" item-margin="20"
+                    <flex-slider class="addcart-slider" class="thumb-slide" slider-id="carousel" as-nav-for="#slider" item-width="125" item-margin="20"
                         animation="slide" flex-slide="s in thumbMySlides track by $index" min-items="3" prev-text="" next-text=""
                         control-nav="false">
                         <li>
@@ -46,11 +46,19 @@
                                             </h4>
                                         </div>
                                     </uib-accordion-heading>
-                                    <div>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias doloremque atque
-                                            aliquam sunt doloribus sequi, totam magnam explicabo sint. Mollitia blanditiis
-                                            repellat nihil voluptate ipsam et, doloremque dignissimos. Quo, sapiente.
-                                        </p>
+                                    <div class="content-1">
+                                        <p> 100% Natural Ingredients. </p>
+                                        <p>Deep Cleansing - Oiliness Regulation - Moisturization and Invigoration </p>
+                                    </div>
+                                    <div class="content-2">
+                                        <ul class="list-unstyled">
+                                            <li>An enduring, handsome low-foam bath gel. </li>
+                                            <li>Crafted with activated Gold Clay straight from the Amazonian rain forest. </li>
+                                            <li>Balanced with Tonka Beans native to South America that lend a complex earthy
+                                                fragrance.
+                                            </li>
+                                            <li>Enriched with toning extracts of Cedarwood and Black Pepper.</li>
+                                        </ul>
                                     </div>
                                 </div>
                                 <div uib-accordion-group class="hidebordercolor panel-default " is-open="status.open2">
@@ -101,8 +109,17 @@
                         </div>
                         <div class="head-sec4">
                             <div class="head1">
-                                <div class="checkbox inblock chk-box">
+                                <!--<div class="checkbox inblock chk-box">
                                     <label><input type="checkbox" value="">Auto Replenish in </label>
+                                </div>-->
+                                <div class="form-group custom-checkbox inblock chk-box">
+                                    <!--<label><input type="checkbox" value=""> Subscribe the Newsletter</label>-->
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="0">
+                                        <label for="0" class="lbl-subscribe">
+                                            Subscribe the Newsletter
+                                        </label>
+                                    </div>
                                 </div>
                                 <div class="inblock">
                                     <form class="form-inline">
@@ -112,6 +129,7 @@
                                         </div>
                                     </form>
                                 </div>
+
                             </div>
                             <p class="head2">If used as indicated, this bottle will last 30 days.</p>
                         </div>

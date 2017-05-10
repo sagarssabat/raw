@@ -15,22 +15,22 @@
             </flex-slider>
         </div>
     </section>
-    <section class="sec4 bg-grey">
+    <section class="sec4 bg-rose">
         <div class="container">
             <div class="product-list">
                 <ul class="list-unstyled list list-inline">
-                    <li ng-repeat="product in cartSlide">
+                    <li ng-repeat="offer in offerSlide">
                         <div class="product-block relate">
                             <!--<h3 class="product-block__head">{{product.title}}</h3>-->
                             <p class="ticket">10% Off</p>
                             <a href=" ">
-                                <img ng-src="{{product.img}}" alt=" " class="img-responsive ">
+                                <img ng-src="{{offer.img}}" alt=" " class="img-responsive ">
                             </a>
                             <div class="product-block__text">
-                                <p class="product-name">{{product.desc}}</p>
-                                <h4 class="product-head">{{product.head}}</h4>
-                                <button class="btn btn-default btn--custom">{{product.btntxt}}</button>
-                                <div>
+                                <p class="product-name">{{offer.desc}}</p>
+                                <h4 class="product-head">{{offer.head}}</h4>
+                                <button class="btn btn-default btn--custom">{{offer.btntxt}}</button>
+                                <div class="offer-price">
                                     <p class="inblock">Rs.650</p>
                                     <p class="inblock">Rs.500</p>
                                 </div>
@@ -48,14 +48,14 @@
                 <hr>
                 <div class="product-list">
                     <ul class="list-unstyled list list-inline">
-                        <li ng-repeat="product in cartSlide">
+                        <li ng-repeat="product in productSlide">
                             <div class="product-block">
                                 <h3 class="product-block__head">{{product.title}}</h3>
                                 <a href=" ">
                                     <img ng-src="{{product.img}}" alt=" " class="img-responsive ">
                                 </a>
                                 <div class="product-block__text">
-                                    <p>{{product.desc}}</p>
+                                    <p class="product-detail">{{product.desc}}</p>
                                     <button class="btn btn-default btn--custom">{{product.btntxt}}</button>
                                 </div>
                             </div>
