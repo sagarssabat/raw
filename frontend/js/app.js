@@ -33,6 +33,16 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locat
             templateUrl: tempateURL,
             controller: 'productListingCtrl'
         })
+        .state('cart-landing', {
+            url: "/cart-landing",
+            templateUrl: tempateURL,
+            controller: 'cartLandingCtrl'
+        })
+        .state('cart-empty', {
+            url: "/cart-empty",
+            templateUrl: tempateURL,
+            controller: 'cartEmptyCtrl'
+        })
         .state('signin', {
             url: "/signin",
             templateUrl: tempateURL,

@@ -145,20 +145,20 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
             title: 'Beard Care',
             img: 'img/product-list/product-1.jpg',
             desc: 'Hair Wash - Dry Hair',
-            head: 'Gold Clay and Tonka Bean Oil',
-            btntxt: 'Shop beared Solution'
+            head: 'Gold Clay and Tonka Bean Oil'
+
         }, {
             title: 'Below The Belt',
             img: 'img/product-list/product-2.jpg',
             desc: 'Hair Wash - Dry Hair',
-            head: 'Gold Clay and Tonka Bean Oil',
-            btntxt: 'Shop below the belt'
+            head: 'Gold Clay and Tonka Bean Oil'
+
         }, {
             title: 'Shower Solutions',
             img: 'img/product-list/product-3.jpg',
             desc: 'Hair Wash - Dry Hair',
-            head: 'Gold Clay and Tonka Bean Oil',
-            btntxt: 'Shop shower Solution'
+            head: 'Gold Clay and Tonka Bean Oil'
+
         }];
         $scope.productSlide = [{
             title: 'Beard Care',
@@ -175,6 +175,62 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
             img: 'img/home/product-1.png',
             desc: 'Recover from prolonged exposure.',
             btntxt: 'Shop shower Solution'
+        }];
+    })
+    .controller('cartEmptyCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
+        $scope.template = TemplateService.getHTML("content/cart-empty.html");
+        TemplateService.title = "Cart Empty"; //This is the Title of the Website
+        $scope.navigation = NavigationService.getNavigation();
+        $scope.emptyCart = [{
+            title: 'Beard Care',
+            img: 'img/home/product-1.png',
+            desc: 'For Our Band of beared brothers.',
+            btntxt: 'Shop beared Solution'
+        }, {
+            title: 'Below The Belt',
+            img: 'img/home/product-2.png',
+            desc: 'Protect yourself from chafing,, down under.',
+            btntxt: 'Shop below the belt'
+        }, {
+            title: 'Shower Solutions',
+            img: 'img/home/product-3.png',
+            desc: 'Recover from prolonged exposure.',
+            btntxt: 'Shop shower Solution'
+        }, {
+            title: 'Hair Care',
+            img: 'img/home/product-4.png',
+            desc: "Energise your hair after a hard day's work.",
+            btntxt: 'Shop Hair care'
+        }, {
+            title: 'Skin Care',
+            img: 'img/home/product-5.png',
+            desc: 'Lathers Great, Washes Clean.',
+            btntxt: 'Shop Skin care'
+        }];
+        $scope.myCart = _.chunk($scope.emptyCart, 3);
+    })
+    .controller('cartLandingCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
+        $scope.template = TemplateService.getHTML("content/cart-landing.html");
+        TemplateService.title = "Cart Landing"; //This is the Title of the Website
+        $scope.navigation = NavigationService.getNavigation();
+        $scope.addItems = [{
+            title: 'Beard Care',
+            img: 'img/product-list/product-1.jpg',
+            desc: 'Hair Wash - Dry Hair',
+            head: 'Gold Clay and Tonka Bean Oil'
+
+        }, {
+            title: 'Below The Belt',
+            img: 'img/product-list/product-2.jpg',
+            desc: 'Hair Wash - Dry Hair',
+            head: 'Gold Clay and Tonka Bean Oil'
+
+        }, {
+            title: 'Shower Solutions',
+            img: 'img/product-list/product-3.jpg',
+            desc: 'Hair Wash - Dry Hair',
+            head: 'Gold Clay and Tonka Bean Oil'
+
         }];
     })
     .controller('signInCtrl', function ($scope, TemplateService, NavigationService, $timeout) {

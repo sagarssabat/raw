@@ -1,31 +1,17 @@
-<div class="product-listing">
-    <section>
-        <div class="banner relate">
-            <flex-slider flex-slide="s in productList track by $index" prev-text="" next-text="">
-                <li>
-                    <!--<div class="slider">
-                    <h4 class="slider__head">{{s.title}}</h4>
-                    <p class="slider__title">{{s.title2}}</p>
-                </div>-->
-                    <img ng-src="{{s}}" class="img-full">
-                    <!--<div class="slider__btn">
-                    <button class="btn btn-default btn--custom">{{s.btntxt}}</button>
-                </div>-->
-                </li>
-            </flex-slider>
-        </div>
-    </section>
-    <section class="sec4 bg-rose">
+<div class="product-listing cart-landing">
+    <section class="sec4 bg-rose banner">
         <div class="container">
+            <h3 class="test-head text-center">View Other Categories</h3>
+            <hr>
             <div class="product-list">
                 <ul class="list-unstyled list list-inline">
-                    <li ng-repeat="offer in offerSlide">
+                    <li ng-repeat="item in addItems">
                         <div class="product-block">
-                            <!--<h3 class="product-block__head">{{product.title}}</h3>-->
+                            <!--<h3 class="product-block__head">{{item.title}}</h3>-->
                             <a href=" ">
                                 <div class="hover-block relate">
                                     <p class="ticket">10% Off</p>
-                                    <img ng-src="{{offer.img}}" alt=" " class="img-responsive">
+                                    <img ng-src="{{item.img}}" alt=" " class="img-responsive">
                                     <div class="hover-txt">
                                         <div class="hover-txt__center">
                                             <h5 class="head">The Blend</h5>
@@ -43,8 +29,8 @@
                                 </div>
                             </a>
                             <div class="product-block__text">
-                                <p class="product-name">{{offer.desc}}</p>
-                                <h4 class="product-head">{{offer.head}}</h4>
+                                <p class="product-name">{{item.desc}}</p>
+                                <h4 class="product-head">{{item.head}}</h4>
                                 <div class="offer-price">
                                     <p class="inblock">Rs. 650</p>
                                     <p class="inblock">Rs. 500</p>

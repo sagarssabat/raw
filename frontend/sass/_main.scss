@@ -107,9 +107,7 @@ footer {
             color: $white;
         }
     }
-}
-
-//bootstrap forms
+} //bootstrap forms
 .input-lg,
 .input-group-lg>.form-control,
 .input-group-lg>.input-group-addon,
@@ -143,9 +141,7 @@ footer {
 
 .form-submission {
     min-height: 300px;
-}
-
-//FLEX SLIDER FIXES
+} //FLEX SLIDER FIXES
 .flex-direction-nav {
     a {
         height: auto;
@@ -173,9 +169,7 @@ header {
 
 .nav-up {
     transform: translateY(-100%);
-}
-
-// CUSTOMIZE CSS STARTS HERE
+} // CUSTOMIZE CSS STARTS HERE
 .relate {
     position: relative;
 }
@@ -213,9 +207,7 @@ header {
     text-transform: uppercase;
     font-size: 20px;
     letter-spacing: 1px;
-}
-
-// custom checkbox sass here
+} // custom checkbox sass here
 .custom-checkbox {
     [type="checkbox"]:not(:checked)+label:before,
     [type="checkbox"]:checked+label:before {
@@ -321,6 +313,38 @@ header {
     border-bottom-color: #ead3a9;
     border-width: 12px;
     margin-left: -36px;
+}
+
+.add-cart {
+    display: table;
+    .cell1,
+    .cell2 {
+        display: table-cell;
+        vertical-align: top;
+    }
+    .input-group {
+        border: 1px solid $dark-grey;
+    }
+    .input-group-addon {
+        padding: 6px;
+        background-color: transparent;
+        border: 1px solid transparent;
+    }
+    .form-control {
+        padding: 0 4px;
+        background-color: transparent;
+        border: 1px solid transparent;
+        text-align: center;
+        width: 40px;
+    }
+    .btn--custom {
+        margin-left: 26px;
+        width: 180px;
+        font-family: 'pop-light';
+        @include button-variant($white,
+        $dark-grey,
+        $dark-grey);
+    }
 }
 
 .custom-navbar {
@@ -497,9 +521,7 @@ header {
         transition-duration: 0.3s;
         transition-timing-function: ease-out;
     }
-}
-
-// .btn--custom:hover:before,
+} // .btn--custom:hover:before,
 // .btn--custom:focus:before,
 // .btn--custom:active:before {
 //     -webkit-transform: scale(1);
@@ -913,9 +935,7 @@ header {
         letter-spacing: 1px;
         margin-top: 20px;
     }
-}
-
-// Product Description Custom Css Here
+} // Product Description Custom Css Here
 .product-description {
     .addcart-section {
         background: #e7e3d8;
@@ -977,38 +997,37 @@ header {
                 p:nth-child(2) {
                     margin-left: 16px;
                 }
-            }
-            .head-sec3 {
-                display: table;
-                .cell1,
-                .cell2 {
-                    display: table-cell;
-                    vertical-align: top;
-                }
-                .input-group {
-                    border: 1px solid $dark-grey;
-                }
-                .input-group-addon {
-                    padding: 6px;
-                    background-color: transparent;
-                    border: 1px solid transparent;
-                }
-                .form-control {
-                    padding: 0 4px;
-                    background-color: transparent;
-                    border: 1px solid transparent;
-                    text-align: center;
-                    width: 40px;
-                }
-                .btn--custom {
-                    margin-left: 26px;
-                    width: 180px;
-                    font-family: 'pop-light';
-                    @include button-variant($white,
-                    $dark-grey,
-                    $dark-grey);
-                }
-            }
+            } // .add-cart {
+            //     display: table;
+            //     .cell1,
+            //     .cell2 {
+            //         display: table-cell;
+            //         vertical-align: top;
+            //     }
+            //     .input-group {
+            //         border: 1px solid $dark-grey;
+            //     }
+            //     .input-group-addon {
+            //         padding: 6px;
+            //         background-color: transparent;
+            //         border: 1px solid transparent;
+            //     }
+            //     .form-control {
+            //         padding: 0 4px;
+            //         background-color: transparent;
+            //         border: 1px solid transparent;
+            //         text-align: center;
+            //         width: 40px;
+            //     }
+            //     .btn--custom {
+            //         margin-left: 26px;
+            //         width: 180px;
+            //         font-family: 'pop-light';
+            //         @include button-variant($white,
+            //         $dark-grey,
+            //         $dark-grey);
+            //     }
+            // }
             .head-sec4 {
                 margin: 20px 0;
                 label {
@@ -1215,9 +1234,7 @@ header {
             margin-top: 40px;
         }
     }
-}
-
-// Sign In Custom Css Here
+} // Sign In Custom Css Here
 .sign-bgcolor {
     background: #f9f3e5;
     .padd80 {
@@ -1319,9 +1336,7 @@ header {
         font-size: 14px;
         padding: 10px 20px;
     }
-}
-
-// Sign Up Custom Css Here
+} // Sign Up Custom Css Here
 .sign-up {
     .help-us {
         margin: 16px 0;
@@ -1376,9 +1391,7 @@ header {
     input[type="number"]::-webkit-inner-spin-button {
         display: none;
     }
-}
-
-// Product Listing Css Here
+} // Product Listing Css Here
 .product-listing {
     .bg-grey {
         background: #ececec;
@@ -1389,6 +1402,15 @@ header {
         }
         .product-list {
             margin-top: 20px;
+        }
+    }
+    .add-cart {
+        margin: 0 auto;
+        .btn--custom {
+            @include button-variant($dark-grey,
+            transparent,
+            $dark-grey);
+            font-family: 'pop-sb';
         }
     }
     .bg-rose {
@@ -1405,6 +1427,7 @@ header {
         padding: 6px 12px;
         text-transform: uppercase;
         text-align: left;
+        z-index: 2;
         &:before {
             content: '';
             position: absolute;
@@ -1435,6 +1458,84 @@ header {
                 color: $dark-grey;
                 text-decoration: line-through;
             }
+        }
+    }
+    .hover-txt {
+        position: absolute;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transition: all 300ms ease;
+    }
+    .hover-block {
+        border: 8px solid transparent;
+        &:hover {
+            border: 8px solid #ead3aa;
+            .hover-txt {
+                opacity: 1;
+                transition: all 300ms ease;
+                background: rgba(232, 224, 211, 0.8); // border: 8px solid #ead3aa;
+            }
+            .hover-txt__center {
+                &:after {
+                    content: url('../img/product-list/arrow.png');
+                }
+                position: absolute;
+                top: 50%;
+                left: 25px;
+                right: 25px;
+                transform: translate(0,
+                -50%);
+                text-align: left;
+                color: $dark-grey;
+                .head {
+                    font-family: 'pop-sb';
+                    font-size: 12px;
+                    text-transform: uppercase;
+                }
+                .text {
+                    font-family: 'work-sansSB';
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+}
+
+// Empty Cart Sass Here
+.cart-empty {
+    .empty {
+        text-align: center;
+        h1 {
+            font-family: 'pop-sb';
+        }
+        h3 {
+            font-family: 'work-sansSB';
+            margin-top: 0;
+        }
+        .btn--custom {
+            @include button-variant($white,
+            $dark-grey,
+            $dark-grey);
+            padding: 12px 20px;
+            margin-top: 40px;
+        }
+    }
+    .product-list {
+        margin-top: 80px;
+    }
+}
+
+// Landing Cart Sass Here
+.cart-landing {
+    padding-top: 130px;
+    .bg-rose {
+        hr {
+            width: 160px;
+            margin: 0 auto;
+            border-top: 1px solid $dark-grey;
         }
     }
 }

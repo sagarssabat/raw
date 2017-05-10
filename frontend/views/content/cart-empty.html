@@ -1,0 +1,35 @@
+<div class="product-listing cart-empty">
+    <section>
+        <div class="banner">
+            <section class="sec4 bg-rose">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-md-offset-4">
+                            <div class="empty">
+                                <h1>Uh-oh!</h1>
+                                <h3>Your Shohpping Cart is Empty</h3>
+                                <button class="btn btn-default btn--custom btn-block">Start Shopping</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-list">
+                        <ul class="list-unstyled list list-inline" ng-repeat="cart in myCart">
+                            <li ng-repeat="empcart in cart">
+                                <div class="product-block">
+                                    <h3 class="product-block__head">{{empcart.title}}</h3>
+                                    <a href=" ">
+                                        <img ng-src="{{empcart.img}}" alt=" " class="img-responsive ">
+                                    </a>
+                                    <div class="product-block__text">
+                                        <p class="product-detail">{{empcart.desc}}</p>
+                                        <button class="btn btn-default btn--custom">{{empcart.btntxt}}</button>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+</div>
