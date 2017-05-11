@@ -10639,10 +10639,60 @@ header {
 
 .cart-landing {
   padding-top: 130px; }
+  .cart-landing .sec4 {
+    background: transparent; }
+  .cart-landing .your-cart {
+    padding: 0 16px; }
+    .cart-landing .your-cart .cart-head,
+    .cart-landing .your-cart .cart-price {
+      font-family: 'pop-sb'; }
+    .cart-landing .your-cart .cart-qty {
+      font-family: 'work-sansR'; }
+    .cart-landing .your-cart .cart-price {
+      font-size: 22px; }
+    .cart-landing .your-cart .add-cart {
+      margin: 20px 0 0; }
+      .cart-landing .your-cart .add-cart .cell1,
+      .cart-landing .your-cart .add-cart .cell2 {
+        display: inline-block;
+        vertical-align: bottom; }
+    .cart-landing .your-cart .abt-product .abt__head {
+      font-family: 'pop-sb';
+      text-transform: uppercase; }
+    .cart-landing .your-cart .abt-product .abt__content {
+      font-family: 'work-sansR'; }
+      .cart-landing .your-cart .abt-product .abt__content p {
+        margin: 0; }
+    .cart-landing .your-cart .auto-rep {
+      font-family: 'work-sansSB';
+      text-transform: uppercase;
+      margin-top: 20px; }
+      .cart-landing .your-cart .auto-rep .inblock {
+        vertical-align: bottom; }
+        .cart-landing .your-cart .auto-rep .inblock label {
+          vertical-align: bottom; }
+        .cart-landing .your-cart .auto-rep .inblock .form-control {
+          width: 16%;
+          text-align: center;
+          padding: 0 6px;
+          height: auto;
+          background-color: transparent;
+          border: none;
+          border-bottom: 1px solid; }
+        .cart-landing .your-cart .auto-rep .inblock .count-days {
+          color: #cf9c69; }
+  .cart-landing .sec4 + .sec4 {
+    padding-top: 0; }
   .cart-landing .bg-rose hr {
     width: 160px;
     margin: 0 auto;
     border-top: 1px solid #282828; }
+  .cart-landing .bg-rose .product-list {
+    margin-top: 40px; }
+  .cart-landing .mg-top {
+    margin-top: 40px; }
+    .cart-landing .mg-top .btn--custom, .cart-landing .mg-top .deal-section .shop-btn, .deal-section .cart-landing .mg-top .shop-btn {
+      width: 160px; }
 
 #fancybox-loading,
 .fancybox-close,

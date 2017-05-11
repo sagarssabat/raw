@@ -1530,12 +1530,83 @@ header {
 
 // Landing Cart Sass Here
 .cart-landing {
+    .sec4 {
+        background: transparent;
+    }
+    .your-cart {
+        padding: 0 16px;
+        .cart-head,
+        .cart-price {
+            font-family: 'pop-sb';
+        }
+        .cart-qty {
+            font-family: 'work-sansR';
+        }
+        .cart-price {
+            font-size: 22px;
+        }
+        .add-cart {
+            margin: 20px 0 0;
+            .cell1,
+            .cell2 {
+                display: inline-block;
+                vertical-align: bottom;
+            }
+        }
+        .abt-product {
+            .abt__head {
+                font-family: 'pop-sb';
+                text-transform: uppercase;
+            }
+            .abt__content {
+                font-family: 'work-sansR';
+                p {
+                    margin: 0;
+                }
+            }
+        }
+        .auto-rep {
+            font-family: 'work-sansSB';
+            text-transform: uppercase;
+            margin-top: 20px;
+            .inblock {
+                vertical-align: bottom;
+                label {
+                    vertical-align: bottom;
+                }
+                .form-control {
+                    width: 16%;
+                    text-align: center;
+                    padding: 0 6px;
+                    height: auto;
+                    background-color: transparent;
+                    border: none;
+                    border-bottom: 1px solid;
+                }
+                .count-days {
+                    color: #cf9c69;
+                }
+            }
+        }
+    }
+    .sec4+.sec4 {
+        padding-top: 0;
+    }
     padding-top: 130px;
     .bg-rose {
         hr {
             width: 160px;
             margin: 0 auto;
             border-top: 1px solid $dark-grey;
+        }
+        .product-list {
+            margin-top: 40px;
+        }
+    }
+    .mg-top {
+        margin-top: 40px;
+        .btn--custom {
+            width: 160px;
         }
     }
 }

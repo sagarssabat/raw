@@ -232,6 +232,25 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
             head: 'Gold Clay and Tonka Bean Oil'
 
         }];
+        $scope.otherItems = [{
+            title: 'Beard Care',
+            img: 'img/product-list/product-1.jpg',
+            desc: 'Hair Wash - Dry Hair',
+            head: 'Gold Clay and Tonka Bean Oil'
+
+        }, {
+            title: 'Below The Belt',
+            img: 'img/product-list/product-2.jpg',
+            desc: 'Hair Wash - Dry Hair',
+            head: 'Gold Clay and Tonka Bean Oil'
+
+        }, {
+            title: 'Shower Solutions',
+            img: 'img/product-list/product-3.jpg',
+            desc: 'Hair Wash - Dry Hair',
+            head: 'Gold Clay and Tonka Bean Oil'
+
+        }];
     })
     .controller('signInCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
         $scope.template = TemplateService.getHTML("content/signin.html");

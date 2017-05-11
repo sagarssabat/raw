@@ -1,7 +1,176 @@
 <div class="product-listing cart-landing">
-    <section class="sec4 bg-rose banner">
+    <div class="bg-rose">
         <div class="container">
-            <h3 class="test-head text-center">View Other Categories</h3>
+            <div class="sec4 your-cart">
+                <div>
+                    <h3 class="inblock">Your Cart</h3>
+                    <p class="inblock"><span>2</span> Items</p>
+                </div>
+                <div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="img/cart-landing/category1.jpg" alt="" class="img-responsive">
+                        </div>
+                        <div class="col-md-8">
+                            <div>
+                                <div class="pull-left">
+                                    <h3 class="inblock marg0 cart-head">Gold Clay And Tonka Bean Oil</h3>
+                                    <h3 class="inblock marg0 cart-qty">(250 ml)</h3>
+                                </div>
+                                <div class="pull-right">
+                                    <p class="cart-price">Rs. 699</p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="abt-product">
+                                <h5 class="abt__head">Body Wash</h5>
+                                <div class="abt__content">
+                                    <p>100% Natural Ingredients</p>
+                                    <p>Deep Cleansing - Oilness Regulation - Moisturization and Invigoration.</p>
+                                </div>
+                            </div>
+                            <div class="add-cart">
+                                <form class="cell1">
+                                    <label for="">QTY</label>
+                                    <div class="input-group">
+                                        <span class="input-group-addon btn btn-default" id="basic-addon1">-</span>
+                                        <input type="text" value="1" class="form-control">
+                                        <span class="input-group-addon btn btn-default" id="basic-addon1">+</span>
+                                    </div>
+                                </form>
+                                <button class="btn btn-default cell2 btn--custom">Add to Cart</button>
+                            </div>
+                            <div class="auto-rep">
+                                <p class="inblock marg0">Auto Replenish</p>
+                                <div class="inblock">
+                                    <form class="form-inline">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control count-days" id="text" value="30">
+                                            <label for="text" class="marg0">Days</label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sec4">
+                <h3 class="test-head text-center">Add Items From Your Whishlist </h3>
+                <hr>
+                <div class="product-list">
+                    <ul class="list-unstyled list list-inline">
+                        <li ng-repeat="item in addItems">
+                            <div class="product-block">
+                                <!--<h3 class="product-block__head">{{item.title}}</h3>-->
+                                <a href=" ">
+                                    <div class="hover-block relate">
+                                        <p class="ticket">10% Off</p>
+                                        <img ng-src="{{item.img}}" alt=" " class="img-responsive">
+                                        <div class="hover-txt">
+                                            <div class="hover-txt__center">
+                                                <h5 class="head">The Blend</h5>
+                                                <div class="text">
+                                                    <p>An enduring, handsome low foam bath gel. Crafted wirh activated Gold
+                                                        clay straight from the Amazonian rain forest</p>
+                                                    <p>Balanced with Tonka Beans native to South America that lends a complex
+                                                        earthy fragrance.
+                                                    </p>
+                                                    <p>Enriched with toning extracts of Cedarwood and Black Pepper.</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="product-block__text">
+                                    <p class="product-name">{{item.desc}}</p>
+                                    <h4 class="product-head">{{item.head}}</h4>
+                                    <div class="offer-price">
+                                        <p class="inblock">Rs. 650</p>
+                                        <p class="inblock">Rs. 500</p>
+                                    </div>
+                                </div>
+                                <div class="add-cart">
+                                    <form class="cell1">
+                                        <div class="input-group">
+                                            <span class="input-group-addon btn btn-default" id="basic-addon1">-</span>
+                                            <input type="text" value="1" class="form-control">
+                                            <span class="input-group-addon btn btn-default" id="basic-addon1">+</span>
+                                        </div>
+                                    </form>
+                                    <button class="btn btn-default cell2 btn--custom">Add to Cart</button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="text-center mg-top">
+                        <button class="btn btn-default btn--custom">View All</button>
+                    </div>
+                </div>
+            </div>
+            <div class="sec4">
+                <div>
+                    <h3 class="test-head text-center">People Who Bought This Also Bought</h3>
+                    <hr>
+                    <div class="product-list">
+                        <ul class="list-unstyled list list-inline">
+                            <li ng-repeat="item in otherItems">
+                                <div class="product-block">
+                                    <!--<h3 class="product-block__head">{{item.title}}</h3>-->
+                                    <a href=" ">
+                                        <div class="hover-block relate">
+                                            <p class="ticket">10% Off</p>
+                                            <img ng-src="{{item.img}}" alt=" " class="img-responsive">
+                                            <div class="hover-txt">
+                                                <div class="hover-txt__center">
+                                                    <h5 class="head">The Blend</h5>
+                                                    <div class="text">
+                                                        <p>An enduring, handsome low foam bath gel. Crafted wirh activated Gold
+                                                            clay straight from the Amazonian rain forest</p>
+                                                        <p>Balanced with Tonka Beans native to South America that lends a complex
+                                                            earthy fragrance.
+                                                        </p>
+                                                        <p>Enriched with toning extracts of Cedarwood and Black Pepper.</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="product-block__text">
+                                        <p class="product-name">{{item.desc}}</p>
+                                        <h4 class="product-head">{{item.head}}</h4>
+                                        <div class="offer-price">
+                                            <p class="inblock">Rs. 650</p>
+                                            <p class="inblock">Rs. 500</p>
+                                        </div>
+                                    </div>
+                                    <div class="add-cart">
+                                        <form class="cell1">
+                                            <div class="input-group">
+                                                <span class="input-group-addon btn btn-default" id="basic-addon1">-</span>
+                                                <input type="text" value="1" class="form-control">
+                                                <span class="input-group-addon btn btn-default" id="basic-addon1">+</span>
+                                            </div>
+                                        </form>
+                                        <button class="btn btn-default cell2 btn--custom">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="text-center mg-top">
+                            <button class="btn btn-default btn--custom">View All</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="sec4 bg-rose banner hide">
+        <div class="container">
+            <h3 class="test-head text-center">Add Items From Your Whishlist </h3>
             <hr>
             <div class="product-list">
                 <ul class="list-unstyled list list-inline">
@@ -49,69 +218,65 @@
                         </div>
                     </li>
                 </ul>
+                <div class="text-center mg-top">
+                    <button class="btn btn-default btn--custom">View All</button>
+                </div>
             </div>
         </div>
     </section>
-    <section class="sec4 bg-grey">
+    <section class="sec4 bg-rose hide">
         <div class="container">
             <div class="">
-                <h3 class="test-head text-center">View Other Categories</h3>
+                <h3 class="test-head text-center">People Who Bought This Also Bought</h3>
                 <hr>
                 <div class="product-list">
                     <ul class="list-unstyled list list-inline">
-                        <li ng-repeat="product in productSlide">
+                        <li ng-repeat="item in otherItems">
                             <div class="product-block">
-                                <h3 class="product-block__head">{{product.title}}</h3>
+                                <!--<h3 class="product-block__head">{{item.title}}</h3>-->
                                 <a href=" ">
-                                    <img ng-src="{{product.img}}" alt=" " class="img-responsive ">
+                                    <div class="hover-block relate">
+                                        <p class="ticket">10% Off</p>
+                                        <img ng-src="{{item.img}}" alt=" " class="img-responsive">
+                                        <div class="hover-txt">
+                                            <div class="hover-txt__center">
+                                                <h5 class="head">The Blend</h5>
+                                                <div class="text">
+                                                    <p>An enduring, handsome low foam bath gel. Crafted wirh activated Gold
+                                                        clay straight from the Amazonian rain forest</p>
+                                                    <p>Balanced with Tonka Beans native to South America that lends a complex
+                                                        earthy fragrance.
+                                                    </p>
+                                                    <p>Enriched with toning extracts of Cedarwood and Black Pepper.</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
                                 </a>
                                 <div class="product-block__text">
-                                    <p class="product-detail">{{product.desc}}</p>
-                                    <button class="btn btn-default btn--custom">{{product.btntxt}}</button>
+                                    <p class="product-name">{{item.desc}}</p>
+                                    <h4 class="product-head">{{item.head}}</h4>
+                                    <div class="offer-price">
+                                        <p class="inblock">Rs. 650</p>
+                                        <p class="inblock">Rs. 500</p>
+                                    </div>
+                                </div>
+                                <div class="add-cart">
+                                    <form class="cell1">
+                                        <div class="input-group">
+                                            <span class="input-group-addon btn btn-default" id="basic-addon1">-</span>
+                                            <input type="text" value="1" class="form-control">
+                                            <span class="input-group-addon btn btn-default" id="basic-addon1">+</span>
+                                        </div>
+                                    </form>
+                                    <button class="btn btn-default cell2 btn--custom">Add to Cart</button>
                                 </div>
                             </div>
                         </li>
                     </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="sec6">
-        <div class="container-fluid padd0">
-            <div class="row marg0">
-                <div class="col-md-6 padd0">
-                    <div class="sec-left">
-                        <div class="cell-table">
-                            <img src="img/home/signup.png" alt="" class="img-responsive step-img">
-                            <div>
-                                <h3 class="sec-head">Step into Savings</h3>
-                                <p class="sec-content">The more you shop with us, the greater rewards you recieve. Get 2.5% cashback on your very
-                                    first purchase, and each purchase together.</p>
-                                <button class="btn btn-default btn--custom">Sign Up</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 padd0">
-                    <div class="sec-right">
-                        <div class="cell-table">
-                            <div class="row marg0">
-                                <div class="col-md-5">
-                                    <div>
-                                        <h3 class="sec-head">Gifts For Him</h3>
-                                        <p class="sec-content">Set a new benchmark with exclusive gift sets for the dapper gentleman in your life.</p>
-                                        <div>
-                                            <button class="btn btn-default btn--custom">Give A Gift</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-7">
-                                    <div>
-                                        <img src="img/home/gift-image-01.png" alt="" class="img-responsive">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="text-center mg-top">
+                        <button class="btn btn-default btn--custom">View All</button>
                     </div>
                 </div>
             </div>
