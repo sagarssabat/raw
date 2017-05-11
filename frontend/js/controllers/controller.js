@@ -251,6 +251,23 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
             head: 'Gold Clay and Tonka Bean Oil'
 
         }];
+        $scope.yourCart = [{
+            img: 'img/cart-landing/category1.jpg',
+            head: 'Gold Clay And Tonka Bean Oil',
+            qty: '(250 ml)',
+            cost: 'Rs. 699',
+            title: 'Body Wash',
+            line1: '100% Natural Ingredients',
+            line2: 'Deep Cleansing - Oilness Regulation - Moisturization and Invigoration.'
+        }, {
+            img: 'img/cart-landing/category1.jpg',
+            head: 'Gold Clay And Tonka Bean Oil',
+            qty: '(250 ml)',
+            cost: 'Rs. 699',
+            title: 'Body Wash',
+            line1: '100% Natural Ingredients',
+            line2: 'Deep Cleansing - Oilness Regulation - Moisturization and Invigoration.'
+        }]
     })
     .controller('signInCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
         $scope.template = TemplateService.getHTML("content/signin.html");

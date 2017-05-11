@@ -10681,8 +10681,6 @@ header {
           border-bottom: 1px solid; }
         .cart-landing .your-cart .auto-rep .inblock .count-days {
           color: #cf9c69; }
-  .cart-landing .sec4 + .sec4 {
-    padding-top: 0; }
   .cart-landing .bg-rose hr {
     width: 160px;
     margin: 0 auto;
@@ -10693,6 +10691,69 @@ header {
     margin-top: 40px; }
     .cart-landing .mg-top .btn--custom, .cart-landing .mg-top .deal-section .shop-btn, .deal-section .cart-landing .mg-top .shop-btn {
       width: 160px; }
+  .cart-landing .cart-section {
+    padding: 25px 0;
+    border-top: 1px solid #282828; }
+  .cart-landing .cart-section + .cart-section {
+    border-top: 1px solid #d7d6cc;
+    border-bottom: 1px solid #d7d6cc; }
+  .cart-landing .cart-section:nth-child(1) {
+    border-top: 1px solid #282828; }
+  .cart-landing .heading-cart {
+    margin-bottom: 20px; }
+    .cart-landing .heading-cart h3 {
+      font-family: 'pop-sb'; }
+    .cart-landing .heading-cart p {
+      font-family: 'work-sansSB';
+      margin-left: 16px;
+      text-transform: uppercase;
+      font-size: 20px; }
+    .cart-landing .heading-cart .inblock {
+      vertical-align: middle; }
+  .cart-landing .table-border {
+    border: 1px solid #282828; }
+  .cart-landing .cart-table .dis-tablecell {
+    vertical-align: top; }
+  .cart-landing .cart-table .form-group {
+    margin-bottom: 0; }
+  .cart-landing .cart-table .form-control {
+    background: transparent;
+    border: none;
+    font-family: 'work-sansSB';
+    font-size: 10px;
+    letter-spacing: 1px; }
+    .cart-landing .cart-table .form-control::-webkit-input-placeholder {
+      font-family: 'work-sansSB';
+      font-size: 10px;
+      letter-spacing: 1px; }
+  .cart-landing .cart-table .btn--custom, .cart-landing .cart-table .deal-section .shop-btn, .deal-section .cart-landing .cart-table .shop-btn {
+    border: none;
+    border-left: 1px solid #282828; }
+  .cart-landing .cart-table .padd25 {
+    padding: 10px 0 25px; }
+    .cart-landing .cart-table .padd25 p {
+      font-family: 'work-sansSB'; }
+  .cart-landing .cart-table .table thead,
+  .cart-landing .cart-table .table tfoot {
+    font-family: 'pop-sb'; }
+  .cart-landing .cart-table .table tbody {
+    font-family: 'pop-light'; }
+  .cart-landing .cart-table .table thead tr th,
+  .cart-landing .cart-table .table thead tr td,
+  .cart-landing .cart-table .table tbody tr th,
+  .cart-landing .cart-table .table tbody tr td,
+  .cart-landing .cart-table .table tfoot tr th,
+  .cart-landing .cart-table .table tfoot tr td {
+    border: none; }
+  .cart-landing .cart-table .table thead tr th:nth-child(2),
+  .cart-landing .cart-table .table tbody tr th:nth-child(2),
+  .cart-landing .cart-table .table tfoot tr th:nth-child(2) {
+    text-align: right; }
+  .cart-landing .cart-table .table thead tr td:nth-child(2),
+  .cart-landing .cart-table .table tbody tr td:nth-child(2),
+  .cart-landing .cart-table .table tfoot tr td:nth-child(2) {
+    text-align: right;
+    font-family: 'pop-sb'; }
 
 #fancybox-loading,
 .fancybox-close,

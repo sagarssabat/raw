@@ -2,31 +2,31 @@
     <div class="bg-rose">
         <div class="container">
             <div class="sec4 your-cart">
-                <div>
-                    <h3 class="inblock">Your Cart</h3>
-                    <p class="inblock"><span>2</span> Items</p>
+                <div class="heading-cart">
+                    <h3 class="inblock marg0">Your Cart</h3>
+                    <p class="inblock marg0"><span>2</span> Items</p>
                 </div>
-                <div>
+                <div class="cart-section" ng-repeat="cart in yourCart">
                     <div class="row">
                         <div class="col-md-4">
-                            <img src="img/cart-landing/category1.jpg" alt="" class="img-responsive">
+                            <img ng-src="{{cart.img}}" alt="" class="img-responsive">
                         </div>
                         <div class="col-md-8">
                             <div>
                                 <div class="pull-left">
-                                    <h3 class="inblock marg0 cart-head">Gold Clay And Tonka Bean Oil</h3>
-                                    <h3 class="inblock marg0 cart-qty">(250 ml)</h3>
+                                    <h3 class="inblock marg0 cart-head">{{cart.head}}</h3>
+                                    <h3 class="inblock marg0 cart-qty">{{cart.qty}}</h3>
                                 </div>
                                 <div class="pull-right">
-                                    <p class="cart-price">Rs. 699</p>
+                                    <p class="cart-price">{{cart.cost}}</p>
                                 </div>
                                 <div class="clearfix"></div>
                             </div>
                             <div class="abt-product">
-                                <h5 class="abt__head">Body Wash</h5>
+                                <h5 class="abt__head">{{cart.title}}</h5>
                                 <div class="abt__content">
-                                    <p>100% Natural Ingredients</p>
-                                    <p>Deep Cleansing - Oilness Regulation - Moisturization and Invigoration.</p>
+                                    <p>{{cart.line1}}</p>
+                                    <p>{{cart.line2}}</p>
                                 </div>
                             </div>
                             <div class="add-cart">
@@ -51,6 +51,57 @@
                                     </form>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-section cart-table">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="dis-table table-border btn-block">
+                                <div class="dis-tablecell">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Enter Your Points">
+                                    </div>
+                                </div>
+                                <div class="dis-tablecell">
+                                    <div class="btn btn-default btn-block btn--custom">Pay Using Points</div>
+                                </div>
+                            </div>
+                            <div class="padd25">
+                                <p class="marg0">You have 335 points. 1 point = 1 INR</p>
+                            </div>
+                            <div class="dis-table table-border">
+                                <div class="dis-tablecell">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Enter Coupon Code">
+                                    </div>
+                                </div>
+                                <div class="dis-tablecell">
+                                    <div class="btn btn-default btn-block btn--custom">Apply</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 pull-right">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Subtotal</th>
+                                        <th>Rs. 1398</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Tax</td>
+                                        <td>Rs. 102</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td>Total</td>
+                                        <td>Rs. 1200</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
                         </div>
                     </div>
                 </div>
