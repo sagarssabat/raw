@@ -269,6 +269,11 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
             line2: 'Deep Cleansing - Oilness Regulation - Moisturization and Invigoration.'
         }]
     })
+    .controller('demoCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
+        $scope.template = TemplateService.getHTML("content/demo.html");
+        TemplateService.title = "demo"; //This is the Title of the Website
+        $scope.navigation = NavigationService.getNavigation();
+    })
     .controller('signInCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
         $scope.template = TemplateService.getHTML("content/signin.html");
         TemplateService.title = "signin"; //This is the Title of the Website

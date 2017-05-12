@@ -10755,6 +10755,12 @@ header {
     text-align: right;
     font-family: 'pop-sb'; }
 
+.bg-blue-ds {
+  background: url("../img/Background.png");
+  background-position: center center;
+  background-size: cover;
+  height: 1000px; }
+
 #fancybox-loading,
 .fancybox-close,
 .fancybox-next span,
